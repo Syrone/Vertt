@@ -176,12 +176,14 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	}
 
-	document.querySelectorAll('.open-popup').forEach(button => {
-		const popupId = button.dataset.popupTarget;
-		const popupElement = document.querySelector(popupId);
-		const popup = new Popup(popupElement);
-		button.addEventListener('click', () => popup.open());
-	});
+	if (document.querySelectorAll('.open-popup')) {
+		document.querySelectorAll('.open-popup').forEach(button => {
+			const popupId = button.dataset.popupTarget;
+			const popupElement = document.querySelector(popupId);
+			const popup = new Popup(popupElement);
+			button.addEventListener('click', () => popup.open());
+		});
+	}
 
 
 })
