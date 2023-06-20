@@ -1,0 +1,12 @@
+2023-06-17T12:24:44+00:00 CRITICAL Uncaught Error: Call to a member function get_average_rating() on null in D:\OSPanel\domains\vertt.local\wp-content\themes\oceanwp-child\woocommerce\owp-archive-product.php:30
+Stack trace:
+#0 D:\OSPanel\domains\vertt.local\wp-includes\template.php(785): require()
+#1 D:\OSPanel\domains\vertt.local\wp-includes\template.php(718): load_template()
+#2 D:\OSPanel\domains\vertt.local\wp-includes\general-template.php(204): locate_template()
+#3 D:\OSPanel\domains\vertt.local\wp-content\themes\oceanwp-child\search.php(93): get_template_part()
+#4 D:\OSPanel\domains\vertt.local\wp-includes\template-loader.php(106): include('D:\\OSPanel\\doma...')
+#5 D:\OSPanel\domains\vertt.local\wp-blog-header.php(19): require_once('D:\\OSPanel\\doma...')
+#6 D:\OSPanel\domains\vertt.local\index.php(17): require('D:\\OSPanel\\doma...')
+#7 {main}
+  thrown in D:\OSPanel\domains\vertt.local\wp-content\themes\oceanwp-child\woocommerce\owp-archive-product.php on line 30
+

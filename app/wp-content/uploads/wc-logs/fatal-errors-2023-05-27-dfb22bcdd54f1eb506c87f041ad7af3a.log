@@ -1,0 +1,116 @@
+2023-05-27T07:38:55+00:00 CRITICAL syntax error, unexpected token "<", expecting end of file in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/functions.php on line 321
+
+2023-05-27T08:41:12+00:00 CRITICAL Uncaught Error: Call to undefined function custom_sort_reviews_by_votes() in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/main-single-product.php:385
+Stack trace:
+#0 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template.php(785): require()
+#1 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/home/k/kiselev...', false)
+#2 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/content-single-product.php(6): wc_get_template_part('main-single-pro...')
+#3 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template.php(785): require('/home/k/kiselev...')
+#4 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/home/k/kiselev...', false)
+#5 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/templates/single-product.php(37): wc_get_template_part('content', 'single-product')
+#6 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template-loader.php(106): include('/home/k/kiselev...')
+#7 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-blog-header.php(19): require_once('/home/k/kiselev...')
+#8 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/index.php(17): require('/home/k/kiselev...')
+#9 {main}
+  thrown in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/main-single-product.php on line 385
+
+2023-05-27T08:41:40+00:00 CRITICAL Uncaught Error: Call to undefined function custom_sort_reviews_by_votes() in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/main-single-product.php:385
+Stack trace:
+#0 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template.php(785): require()
+#1 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/home/k/kiselev...', false)
+#2 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/content-single-product.php(6): wc_get_template_part('main-single-pro...')
+#3 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template.php(785): require('/home/k/kiselev...')
+#4 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/home/k/kiselev...', false)
+#5 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/templates/single-product.php(37): wc_get_template_part('content', 'single-product')
+#6 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template-loader.php(106): include('/home/k/kiselev...')
+#7 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-blog-header.php(19): require_once('/home/k/kiselev...')
+#8 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/index.php(17): require('/home/k/kiselev...')
+#9 {main}
+  thrown in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/main-single-product.php on line 385
+
+2023-05-27T08:42:03+00:00 CRITICAL Uncaught Error: Call to undefined function custom_sort_reviews_by_votes() in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/main-single-product.php:385
+Stack trace:
+#0 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template.php(785): require()
+#1 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/home/k/kiselev...', false)
+#2 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/content-single-product.php(6): wc_get_template_part('main-single-pro...')
+#3 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template.php(785): require('/home/k/kiselev...')
+#4 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/home/k/kiselev...', false)
+#5 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/templates/single-product.php(37): wc_get_template_part('content', 'single-product')
+#6 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template-loader.php(106): include('/home/k/kiselev...')
+#7 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-blog-header.php(19): require_once('/home/k/kiselev...')
+#8 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/index.php(17): require('/home/k/kiselev...')
+#9 {main}
+  thrown in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/main-single-product.php on line 385
+
+2023-05-27T08:42:42+00:00 CRITICAL Uncaught Error: Call to undefined function custom_sort_reviews_by_votes() in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/main-single-product.php:385
+Stack trace:
+#0 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template.php(785): require()
+#1 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/home/k/kiselev...', false)
+#2 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/content-single-product.php(6): wc_get_template_part('main-single-pro...')
+#3 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template.php(785): require('/home/k/kiselev...')
+#4 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/home/k/kiselev...', false)
+#5 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/templates/single-product.php(37): wc_get_template_part('content', 'single-product')
+#6 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template-loader.php(106): include('/home/k/kiselev...')
+#7 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-blog-header.php(19): require_once('/home/k/kiselev...')
+#8 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/index.php(17): require('/home/k/kiselev...')
+#9 {main}
+  thrown in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/main-single-product.php on line 385
+
+2023-05-27T08:42:51+00:00 CRITICAL Uncaught Error: Call to undefined function custom_sort_reviews_by_votes() in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/main-single-product.php:385
+Stack trace:
+#0 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template.php(785): require()
+#1 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/home/k/kiselev...', false)
+#2 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/content-single-product.php(6): wc_get_template_part('main-single-pro...')
+#3 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template.php(785): require('/home/k/kiselev...')
+#4 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/home/k/kiselev...', false)
+#5 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/templates/single-product.php(37): wc_get_template_part('content', 'single-product')
+#6 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template-loader.php(106): include('/home/k/kiselev...')
+#7 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-blog-header.php(19): require_once('/home/k/kiselev...')
+#8 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/index.php(17): require('/home/k/kiselev...')
+#9 {main}
+  thrown in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/main-single-product.php on line 385
+
+2023-05-27T09:11:08+00:00 CRITICAL syntax error, unexpected token "public", expecting end of file in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/main-single-product.php on line 386
+
+2023-05-27T09:12:15+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/main-single-product.php:395
+Stack trace:
+#0 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template.php(785): require()
+#1 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/home/k/kiselev...', false)
+#2 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/content-single-product.php(6): wc_get_template_part('main-single-pro...')
+#3 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template.php(785): require('/home/k/kiselev...')
+#4 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/home/k/kiselev...', false)
+#5 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/templates/single-product.php(37): wc_get_template_part('content', 'single-product')
+#6 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template-loader.php(106): include('/home/k/kiselev...')
+#7 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-blog-header.php(19): require_once('/home/k/kiselev...')
+#8 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/index.php(17): require('/home/k/kiselev...')
+#9 {main}
+  thrown in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/main-single-product.php on line 395
+
+2023-05-27T09:13:02+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/main-single-product.php:395
+Stack trace:
+#0 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template.php(785): require()
+#1 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/home/k/kiselev...', false)
+#2 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/content-single-product.php(6): wc_get_template_part('main-single-pro...')
+#3 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template.php(785): require('/home/k/kiselev...')
+#4 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/home/k/kiselev...', false)
+#5 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/templates/single-product.php(37): wc_get_template_part('content', 'single-product')
+#6 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template-loader.php(106): include('/home/k/kiselev...')
+#7 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-blog-header.php(19): require_once('/home/k/kiselev...')
+#8 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/index.php(17): require('/home/k/kiselev...')
+#9 {main}
+  thrown in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/main-single-product.php on line 395
+
+2023-05-27T09:15:06+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/main-single-product.php:396
+Stack trace:
+#0 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template.php(785): require()
+#1 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/home/k/kiselev...', false)
+#2 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/content-single-product.php(6): wc_get_template_part('main-single-pro...')
+#3 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template.php(785): require('/home/k/kiselev...')
+#4 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/home/k/kiselev...', false)
+#5 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/templates/single-product.php(37): wc_get_template_part('content', 'single-product')
+#6 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template-loader.php(106): include('/home/k/kiselev...')
+#7 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-blog-header.php(19): require_once('/home/k/kiselev...')
+#8 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/index.php(17): require('/home/k/kiselev...')
+#9 {main}
+  thrown in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/main-single-product.php on line 396
+

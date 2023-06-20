@@ -1,0 +1,250 @@
+.post-card__link{display:flex;}
+
+.date-main	{
+			font-size:34px;
+}
+
+.submenu {
+    padding: 0 100px 0 100px;
+    height: 55px;
+    background: #F3F3F3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.submenu h2 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.submenu span {
+    font-weight: 600;
+}
+
+.back_and_filtre {
+    display: flex;
+    align-items: center;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.back:hover {
+    opacity: 0.6;
+}
+
+.back img {
+    margin-right: 10px;
+}
+
+.back h2 {
+    margin-top: 5px;
+}
+
+.filtre_show {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.filtre_show:hover {
+    opacity: 0.6;
+}
+
+.filtre_show h2 {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.filtre_hide {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.filtre_hide:hover {
+    opacity: 0.6;
+}
+
+.filtre_hide h2 {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.filtre_hide img {
+    transform: rotate(180deg);
+}
+
+.click_hide {
+    display: none;
+}
+
+/*Всплывающий фильтр*/
+.popup {
+	z-index: 100;
+    display: none;;
+    padding-top: 30vh;
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.70);
+    backdrop-filter: blur(10px) saturate(50%);
+	-webkit-backdrop-filter: blur(10px) saturate(50%);
+}
+.popup h2 {
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(75, 75, 75, 0.212);
+    padding-bottom: 50px;
+    width: 220px;
+    display: table;
+    margin: 0 auto;
+}
+.popup ul{
+margin: auto;
+width:220px;}
+.popup li{
+	list-style-type:none;
+text-align: center;
+padding:6px;
+border-bottom:1px solid rgba(75, 75, 75, 0.212);}
+
+
+
+body > div.popup > select {
+    border: none !important;
+    outline: none !important;
+    background: #ffffff00;
+    font-size: 16px;
+    width: 220px;
+    text-align: center;
+    overflow: hidden;
+    display: table;
+    margin: 0 auto;
+}
+
+body > div.popup > select > option {
+    padding: 15px;
+    border-bottom: 1px solid rgba(75, 75, 75, 0.212);
+}
+
+/*Блок постов*/
+
+
+
+
+.archive_years {
+    margin-bottom: 100px;
+		width:1720px;
+	margin:auto;
+  padding: 40px 0;
+}
+
+
+.archive_cart {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 40px;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
+    cursor: pointer;
+}
+
+.cart:hover {
+    opacity: 0.6;
+}
+
+.cart img {
+    width: 260px;
+    height: 150px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+
+.date {
+    font-size: 16px;
+    font-weight: 500;
+    color: #696969;
+    padding: 0;
+    margin: 0;
+}
+
+.heading {
+    font-size: 19px;
+    padding: 0;
+    margin: 0 5px 0 0;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination h3 {
+    font-size: 19px;
+    font-weight: 500;
+    margin: 0px 15px 0 15px;
+}
+
+.pagination img:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1240px) {
+    .cart {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .archive {
+        padding: 50px 50px 50px 50px;
+    }
+
+    .cart img {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .archive_cart {
+        grid-template-columns: 100%;
+    }
+
+    .cart {
+        margin-bottom: 20px;
+    }
+
+    .cart img {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .cart img {
+        height: 200px;
+    }
+
+    .submenu {
+        padding: 0 10px 0 10px;
+    }
+
+    .archive {
+        padding: 50px 20px 50px 20px;
+    }
+
+    .back {
+        margin-right: 20px;
+    }
+}

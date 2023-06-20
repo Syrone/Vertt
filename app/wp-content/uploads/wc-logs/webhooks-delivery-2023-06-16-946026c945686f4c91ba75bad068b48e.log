@@ -1,0 +1,56 @@
+2023-06-16T20:52:02+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 06c2a4dd346f183f515ee53b8d575806
+            [Date] => Jun 16, 2023 @ 20:52
+            [URL] => https://backend.syncee.co/rest/CentralOrderManagementService/orderFulfillmentWebHookFromWoocommerce
+            [Duration] => 0.72448
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/7.7.2 Hookshot (WordPress/6.2.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://vertt.ucreateweb.ru/
+                            [X-WC-Webhook-Topic] => order.updated
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => m5txnqVR0x7nGBto1tTpOk8ltC4UQgK0QJvmJjw81f4=
+                            [X-WC-Webhook-ID] => 1
+                            [X-WC-Webhook-Delivery-ID] => 06c2a4dd346f183f515ee53b8d575806
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Fri, 16 Jun 2023 20:52:02 GMT
+                                    [server] => Apache/2.4.38 (Debian)
+                                    [x-xss-protection] => 1; mode=block
+                                    [access-control-allow-origin] => *
+                                    [access-control-allow-methods] => GET,POST,OPTIONS,DELETE,PUT
+                                    [access-control-allow-headers] => X-Requested-With, Content-Type, Accept, Origin, Authorization, X-authentication, X-Authorization, X-client
+                                    [strict-transport-security] => max-age=7776000
+                                    [content-type] => application/json
+                                    [via] => 1.1 google
+                                    [alt-svc] => h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+

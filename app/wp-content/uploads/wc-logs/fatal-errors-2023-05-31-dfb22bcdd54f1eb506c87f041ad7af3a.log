@@ -1,0 +1,23 @@
+2023-05-31T03:15:25+00:00 CRITICAL Uncaught Error: Failed opening required '/home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce-gateway-stripe/includes/admin/stripe-settings.php' (include_path='.:/usr/share/php7:/usr/share/php') in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-gateway-stripe.php:176
+Stack trace:
+#0 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-gateway-stripe.php(88): WC_Gateway_Stripe->init_form_fields()
+#1 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce-gateway-stripe/woocommerce-gateway-stripe.php(652): WC_Gateway_Stripe->__construct()
+#2 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce-gateway-stripe/woocommerce-gateway-stripe.php(380): WC_Stripe->get_main_stripe_gateway()
+#3 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/class-wp-hook.php(308): WC_Stripe->add_gateways(Array)
+#4 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#5 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(88): apply_filters('woocommerce_pay...', Array)
+#6 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(70): WC_Payment_Gateways->init()
+#7 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(43): WC_Payment_Gateways->__construct()
+#8 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/includes/class-woocommerce.php(932): WC_Payment_Gateways::instance()
+#9 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-stripe-intent-controller.php(52): WooCommerce->payment_gateways()
+#10 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-stripe-intent-controller.php(700): WC_Stripe_Intent_Controller->get_gateway()
+#11 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/class-wp-hook.php(308): WC_Stripe_Intent_Controller->maybe_process_upe_redirect(Object(WP))
+#12 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#13 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#14 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/class-wp.php(797): do_action_ref_array('wp', Array)
+#15 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/functions.php(1334): WP->main('')
+#16 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-blog-header.php(16): wp()
+#17 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/index.php(17): require('/home/k/kiselev...')
+#18 {main}
+  thrown in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-gateway-stripe.php on line 176
+

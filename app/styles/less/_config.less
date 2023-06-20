@@ -1,0 +1,67 @@
+// USER VARIABLES SECTION
+
+@lineheight: 1.65; // Document Line Height
+
+// IMPORT SECTION
+
+// @import (less) 'node_modules/bootstrap/dist/css/bootstrap-reboot.css'; // Bootstrap Reboot collection
+// @import (less) 'node_modules/bootstrap/dist/css/bootstrap-grid.css'; // Optional Bootstrap Grid
+
+// FONTS LOAD SECTION
+
+.font(@fname, @fstyle, @fweight, @furl) {
+	@font-face {
+		font-family: @fname;
+		font-style: @fstyle;
+		font-weight: @fweight;
+		src: url(@furl) format('truetype');
+	}
+}
+
+.font('Swis', normal, 300, '../fonts/Sw721Lt.ttf');
+.font('Swis', normal, 400, '../fonts/tt0003m_.ttf');
+.font('Swis', italic, 400, '../fonts/tt0004m_.ttf');
+.font('Swis', normal, 700, '../fonts/tt0005m_.ttf');
+.font('Swis', italic, 700, '../fonts/tt0006m_.ttf');
+
+// GENERAL CSS SETTINGS
+
+:root {
+	--primary-color: #a0fff4;
+	--primary-color-hover: #91FAEE;
+	--primary-color-focus: #0b7cac;
+	--dark-color: #4d4d4d;
+	--dark-light-color: #808080;
+	--gray-color: #cccccc;
+	--gray-light-color: #e6e6e6;
+
+	--Swis: Swis, sans-serif;
+	--system-font: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+	--h1: 2.5rem;
+	--h2: 2.25rem;
+	--h3: 2rem;
+	--h4: 1.75rem;
+	--fz-1: 1.5rem;
+	--fz-2: 1.25rem;
+	--fz-3: 1rem;
+	--fz-tiny: .75rem;
+
+	--box-shadow-1: 1px 2px 20px 0px rgba(0, 0, 0, 0.15);
+	--box-shadow-2: 0px 0px 25px 4px rgb(0 0 0 / 10%);
+}
+
+body {
+	font-family: var(--Swis);
+	font-size: var(--fz-3);
+	line-height: @lineheight;
+	color: var(--dark-color);
+	background-color: var(--gray-light-color);
+	min-width: 320px;
+	position: relative;
+	overflow-x: hidden;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}

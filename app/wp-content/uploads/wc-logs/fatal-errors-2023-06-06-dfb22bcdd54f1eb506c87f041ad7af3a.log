@@ -1,0 +1,54 @@
+2023-06-06T10:32:42+00:00 CRITICAL syntax error, unexpected token "{", expecting "(" in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/main-single-product.php on line 288
+
+2023-06-06T10:33:13+00:00 CRITICAL Unmatched '}' in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/main-single-product.php on line 337
+
+2023-06-06T10:34:10+00:00 CRITICAL Unmatched '}' in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/main-single-product.php on line 337
+
+2023-06-06T10:34:21+00:00 CRITICAL Unmatched '}' in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/main-single-product.php on line 337
+
+2023-06-06T10:34:47+00:00 CRITICAL Unmatched '}' in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/main-single-product.php on line 335
+
+2023-06-06T10:57:45+00:00 CRITICAL Can't use method return value in write context in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/main-single-product.php on line 292
+
+2023-06-06T11:00:21+00:00 CRITICAL Uncaught Error: Call to a member function is_in_stock() on null in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/main-single-product.php:292
+Stack trace:
+#0 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template.php(785): require()
+#1 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/home/k/kiselev...', false)
+#2 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/content-single-product.php(6): wc_get_template_part('main-single-pro...')
+#3 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template.php(785): require('/home/k/kiselev...')
+#4 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/home/k/kiselev...', false)
+#5 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/templates/single-product.php(37): wc_get_template_part('content', 'single-product')
+#6 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template-loader.php(106): include('/home/k/kiselev...')
+#7 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-blog-header.php(19): require_once('/home/k/kiselev...')
+#8 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/index.php(17): require('/home/k/kiselev...')
+#9 {main}
+  thrown in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/main-single-product.php on line 292
+
+2023-06-06T11:01:17+00:00 CRITICAL Uncaught Error: Call to a member function is_in_stock() on null in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/main-single-product.php:283
+Stack trace:
+#0 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template.php(785): require()
+#1 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/home/k/kiselev...', false)
+#2 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/content-single-product.php(6): wc_get_template_part('main-single-pro...')
+#3 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template.php(785): require('/home/k/kiselev...')
+#4 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/home/k/kiselev...', false)
+#5 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/templates/single-product.php(37): wc_get_template_part('content', 'single-product')
+#6 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template-loader.php(106): include('/home/k/kiselev...')
+#7 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-blog-header.php(19): require_once('/home/k/kiselev...')
+#8 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/index.php(17): require('/home/k/kiselev...')
+#9 {main}
+  thrown in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/main-single-product.php on line 283
+
+2023-06-06T11:02:20+00:00 CRITICAL Uncaught Error: Call to a member function is_in_stock() on null in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/main-single-product.php:292
+Stack trace:
+#0 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template.php(785): require()
+#1 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/home/k/kiselev...', false)
+#2 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/content-single-product.php(6): wc_get_template_part('main-single-pro...')
+#3 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template.php(785): require('/home/k/kiselev...')
+#4 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/home/k/kiselev...', false)
+#5 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/templates/single-product.php(37): wc_get_template_part('content', 'single-product')
+#6 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template-loader.php(106): include('/home/k/kiselev...')
+#7 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-blog-header.php(19): require_once('/home/k/kiselev...')
+#8 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/index.php(17): require('/home/k/kiselev...')
+#9 {main}
+  thrown in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/main-single-product.php on line 292
+

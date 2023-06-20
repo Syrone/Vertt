@@ -1,0 +1,16 @@
+2023-06-05T08:45:35+00:00 CRITICAL syntax error, unexpected token "<", expecting end of file in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/main-single-product.php on line 2
+
+2023-06-05T11:59:35+00:00 CRITICAL Uncaught Error: Undefined constant "none" in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/main-single-product.php:401
+Stack trace:
+#0 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template.php(785): require()
+#1 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/home/k/kiselev...', false)
+#2 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/content-single-product.php(6): wc_get_template_part('main-single-pro...')
+#3 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template.php(785): require('/home/k/kiselev...')
+#4 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/home/k/kiselev...', false)
+#5 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/woocommerce/templates/single-product.php(37): wc_get_template_part('content', 'single-product')
+#6 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-includes/template-loader.php(106): include('/home/k/kiselev...')
+#7 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-blog-header.php(19): require_once('/home/k/kiselev...')
+#8 /home/k/kiselev983/vertt_ucreateweb_ru/public_html/index.php(17): require('/home/k/kiselev...')
+#9 {main}
+  thrown in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/themes/oceanwp-child/woocommerce/main-single-product.php on line 401
+
