@@ -1,2 +1,0 @@
-2023-05-26T18:56:23+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 393216 bytes) in /home/k/kiselev983/vertt_ucreateweb_ru/public_html/wp-content/plugins/wp-file-manager/lib/php/elFinderVolumeDriver.class.php on line 4843
-
