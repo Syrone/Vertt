@@ -39,6 +39,27 @@ document.addEventListener('DOMContentLoaded', () => {
 		noSwipingClass: 'swiper-slide',
 	});
 
+	const swiperContainer1 = document.querySelector('.swiper-left-auto');
+	const swiperContainer2 = document.querySelector('.swiper-left-auto2');
+
+	if (swiperContainer1 && swiperContainer2) {
+		swiperContainer1.addEventListener('mouseenter', () => {
+			swiperLeftAuto.autoplay.stop();
+		});
+
+		swiperContainer1.addEventListener('mouseleave', () => {
+			swiperLeftAuto.autoplay.start();
+		});
+
+		swiperContainer2.addEventListener('mouseenter', () => {
+			swiperLeftAuto2.autoplay.stop();
+		});
+
+		swiperContainer2.addEventListener('mouseleave', () => {
+			swiperLeftAuto2.autoplay.start();
+		});
+	}
+
 	//Swiper из третьего блока
 	const swiperEffectCards = new Swiper(".swiper-effect-card", {
 		effect: "cards",
@@ -70,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			el: '.swiper-effect-card2-scrollbar',
 			draggable: true,
 			dragSize: 'auto',
-		 },
+		},
 	});
 
 
@@ -183,6 +204,21 @@ document.addEventListener('DOMContentLoaded', () => {
 			const popup = new Popup(popupElement);
 			button.addEventListener('click', () => popup.open());
 		});
+	}
+
+	//Копируем блок с вставляем в другой.
+	let copyBlocks = document.querySelectorAll('.product-left-copy'),
+		duplicateBlocks = document.querySelectorAll('.product-left-duplicate');
+
+	if (copyBlocks.length === 0 || duplicateBlocks.length === 0) {
+		console.error('Блоки "product-left-copy" или "product-left-duplicate" не найдены');
+	} else if (copyBlocks.length !== duplicateBlocks.length) {
+		console.error('Количество блоков "product-left-copy" и "product-left-duplicate" не совпадает');
+	} else {
+		// Копируем содержимое из каждого блока 'product-left-copy' в соответствующий блок 'product-left-duplicate'
+		for (let i = 0; i < copyBlocks.length; i++) {
+			duplicateBlocks[i].innerHTML = copyBlocks[i].innerHTML;
+		}
 	}
 
 

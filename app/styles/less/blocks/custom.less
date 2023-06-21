@@ -4,7 +4,7 @@
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 3rem;
+	height: 2.5rem;
 	max-width: 250px;
 	font-family: var(--Swis);
 	font-size: var(--fz-1);
@@ -14,7 +14,7 @@
 	background-color: var(--primary-color);
 	letter-spacing: normal;
 	border: none;
-	border-radius: 20px;
+	border-radius: 30px;
 	padding: 0 .6rem;
 	cursor: pointer;
 
@@ -28,8 +28,8 @@
 
 	&:active,
 	&:focus {
-		background-color: var(--primary-color-focus);
-		color: var(--gray-light-color);
+		background-color: var(--dark-color);
+		color: var(--primary-color);
 	}
 }
 
@@ -258,11 +258,6 @@
 //Первый блок
 .first-section-page {
 	font-family: var(--Swis);
-
-	&.first_block-page_category1 {
-		height: 100vh;
-		max-height: 1000px;
-	}
 
 	.firs_block-page_category {
 		height: 100%;
@@ -630,7 +625,7 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			height: 3rem;
+			height: 2.5rem;
 			font-size: var(--fz-1);
 			line-height: normal;
 		}
@@ -731,8 +726,8 @@
 //Swiper в popup окне
 .wrapper-popup-swiper {
 	.swiper-effect-card2 {
+		display: flex;	align-items: center;
 		width: 620px;
-		height: 100vh;
 		min-height: 800px;
 		margin: 0 auto !important;
 		user-select: none;
@@ -843,7 +838,7 @@
 	:root {
 		--h1: 1.375rem;
 		--h2: 1.25rem;
-		--h3: 1.125;
+		--h3: 1.125rem;
 		--fz-1: 1rem;
 		--fz-2: .875rem;
 		--fz-3: .75rem;
@@ -914,9 +909,16 @@
 
 			.product-left-duplicate {
 				display: block;
+				margin-bottom: 5rem;
+				.swiper-product-price {
+					margin-bottom: 0;
+				}
 			}
 
-			.wrapper-swiper-effect-card {}
+			.wrapper-swiper-effect-card {
+				height: auto;
+				align-items: start;
+			}
 
 			.swiper-effect-card {
 				width: 360px !important;
@@ -971,7 +973,7 @@
 		.section-product-right {
 			.swiper-effect-card {
 				width: 55% !important;
-				height: 100%;
+				height: 80vw;
 			}
 		}
 	}
@@ -990,7 +992,7 @@
 		.section-product-right {
 			.swiper-effect-card {
 				width: 50% !important;
-				height: 90%;
+				height: 70vw;
 			}
 		}
 	}

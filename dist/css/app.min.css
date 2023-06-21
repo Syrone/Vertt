@@ -74,7 +74,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 3rem;
+  height: 2.5rem;
   max-width: 250px;
   font-family: var(--Swis);
   font-size: var(--fz-1);
@@ -84,7 +84,7 @@ img {
   background-color: var(--primary-color);
   letter-spacing: normal;
   border: none;
-  border-radius: 20px;
+  border-radius: 30px;
   padding: 0 0.6rem;
   cursor: pointer;
 }
@@ -97,8 +97,8 @@ img {
 }
 .primary-button:active,
 .primary-button:focus {
-  background-color: var(--primary-color-focus);
-  color: var(--gray-light-color);
+  background-color: var(--dark-color);
+  color: var(--primary-color);
 }
 .button-link {
   display: -webkit-inline-box;
@@ -324,10 +324,6 @@ img {
 }
 .first-section-page {
   font-family: var(--Swis);
-}
-.first-section-page.first_block-page_category1 {
-  height: 100vh;
-  max-height: 1000px;
 }
 .first-section-page .firs_block-page_category {
   height: 100%;
@@ -681,7 +677,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 3rem;
+  height: 2.5rem;
   font-size: var(--fz-1);
   line-height: normal;
 }
@@ -764,8 +760,13 @@ img {
   text-decoration: underline;
 }
 .wrapper-popup-swiper .swiper-effect-card2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 620px;
-  height: 100vh;
   min-height: 800px;
   margin: 0 auto !important;
   -webkit-user-select: none;
@@ -859,7 +860,7 @@ img {
   :root {
     --h1: 1.375rem;
     --h2: 1.25rem;
-    --h3: 1.125;
+    --h3: 1.125rem;
     --fz-1: 1rem;
     --fz-2: 0.875rem;
     --fz-3: 0.75rem;
@@ -909,6 +910,16 @@ img {
   }
   .section-swiper-product .section-product-right .product-left-duplicate {
     display: block;
+    margin-bottom: 5rem;
+  }
+  .section-swiper-product .section-product-right .product-left-duplicate .swiper-product-price {
+    margin-bottom: 0;
+  }
+  .section-swiper-product .section-product-right .wrapper-swiper-effect-card {
+    height: auto;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
   .section-swiper-product .section-product-right .swiper-effect-card {
     width: 360px !important;
@@ -941,7 +952,7 @@ img {
 @media (max-width: 767px) {
   .section-swiper-product .section-product-right .swiper-effect-card {
     width: 55% !important;
-    height: 100%;
+    height: 80vw;
   }
   .wrapper-popup-swiper .swiper-effect-card2 {
     height: 100%;
@@ -951,6 +962,6 @@ img {
 @media (max-width: 576px) {
   .section-swiper-product .section-product-right .swiper-effect-card {
     width: 50% !important;
-    height: 90%;
+    height: 70vw;
   }
 }
