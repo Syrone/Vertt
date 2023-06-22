@@ -3,12 +3,14 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+
+	//Страница Hanky Code.
 	//Swiper из второго блока
 	const swiperLeftAuto = new Swiper('.swiper-left-auto', {
 		a11y: false,
 		direction: 'horizontal',
 		loop: true,
-		speed: 4000,
+		speed: 7000,
 		spaceBetween: 50,
 		slidesPerView: 'auto',
 		freeMode: true,
@@ -26,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		a11y: false,
 		direction: 'horizontal',
 		loop: true,
-		speed: 7000,
+		speed: 11000,
 		spaceBetween: 50,
 		slidesPerView: 'auto',
 		freeMode: true,
@@ -219,6 +221,44 @@ document.addEventListener('DOMContentLoaded', () => {
 		for (let i = 0; i < copyBlocks.length; i++) {
 			duplicateBlocks[i].innerHTML = copyBlocks[i].innerHTML;
 		}
+	}
+
+	//Страница Dolls
+	//Чтобы считывался клик по favorite на карточке good
+	const elementsWrapperFav = document.querySelectorAll('.wrapper-fav');
+
+	elementsWrapperFav.forEach(function (element) {
+		element.addEventListener('click', function (event) {
+			event.preventDefault();
+		});
+	});
+
+
+	//ЭТО СМЕЛО УДАЛЯЙ
+	const oceanwpGrid = document.getElementById('oceanwp-grid');
+	const oceanwpList = document.getElementById('oceanwp-list');
+	const products = document.querySelector('.products');
+
+	if (oceanwpGrid && oceanwpList && products) {
+		oceanwpGrid.addEventListener('click', (event) => {
+			event.preventDefault();
+			oceanwpList.classList.remove('active')
+			oceanwpGrid.classList.add('active');
+			if (!products.classList.contains('grid')) {
+				products.classList.remove('list');
+				products.classList.add('grid');
+			}
+		});
+
+		oceanwpList.addEventListener('click', (event) => {
+			event.preventDefault();
+			oceanwpGrid.classList.remove('active');
+			oceanwpList.classList.add('active')
+			if (!products.classList.contains('list')) {
+				products.classList.remove('grid');
+				products.classList.add('list');
+			}
+		});
 	}
 
 

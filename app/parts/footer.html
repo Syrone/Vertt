@@ -126,6 +126,8 @@
 	</div>
 
 </footer>
+</div>
+</div>
 
 <script src="js/jquery-3.7.0.min.js"></script>
 <script src="js/jquery.accordion-wizard.min.js"></script>
@@ -133,6 +135,102 @@
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/app.min.js"></script>
+<script>
+	$(document).ready(function () {
+		$('#accordeon .acc-head').on('click', f_acc);
+	});
+	function f_acc() {
+		$('#accordeon .acc-body').not($(this).next()).slideUp(500);
+		$(this).next().slideToggle(700);
+		$(this).children('img').toggleClass('rotate-img-main');
+		$('#accordeon .acc-head').not(this).children('img').removeClass('rotate-img-main');
+	}
+
+
+
+
+
+
+</script>
+<script>
+	$ = jQuery;
+
+	$(document).ready(function () {
+		$('.js-popup').click(function () {
+			let hide_current = false;
+			let popup = $(this).data('popup');
+			if ($('.popup--' + popup).hasClass('show')) { hide_current = true; }
+			$('.offcanvas-popup').removeClass('show');
+
+			if (!hide_current) {
+				$('.popup--' + popup).toggleClass('show');
+			}
+		});
+		$('.js-popup-close').click(function () {
+			$('.offcanvas-popup').removeClass('show');
+		});
+		$('.sidebar_create_account').click(function (e) {
+			e.preventDefault();
+			$('#create-acc').trigger('click');
+		});
+	});
+</script>
+<script>
+	let content = document.getElementById("popup-footer")
+	let show = document.getElementById("showContent")
+	let hide = document.getElementById("hideContent")
+
+	show.addEventListener("click", () => {
+		content.style.display = "block"
+	})
+
+	hide.addEventListener("click", () => {
+		content.style.display = "none"
+	})
+</script>
+<script language="javascript">
+	// set viewport to zoom to 1200px wide on viewports > 640px wide
+	var viewPortTag = document.createElement('meta');
+	viewPortTag.id = 'viewport';
+	viewPortTag.name = 'viewport';
+	if (screen.width > 640) {
+		viewPortTag.content = 'width=1920';
+	} else {
+		viewPortTag.content = 'width=device-width';
+	}
+	document.getElementsByTagName('head')[0].appendChild(viewPortTag);
+</script>
+<script>
+	$ = jQuery;
+
+	$('.men').click(function (event) {
+		event.preventDefault();
+		$(".lin2").toggleClass("lin_width");
+		$('.menu').slideToggle();
+		$(".shop_menu").fadeOut();
+		$(".menu").css("display", "flex");
+		$('.menu').removeClass('active-height-menu');
+
+
+	});
+
+	$('#shop').click(function (event) {
+		event.preventDefault();
+		$('.shop_menu').slideToggle();
+		$(".shop_menu").css("display", "flex");
+		$('.menu').toggleClass('active-height-menu');
+
+
+	});
+
+</script>
+<style>
+	.footer-form__button {
+		background-color: #4E4E4E !important;
+		color: #A0FFF4 !important;
+		font-size: 16px !important;
+	}
+</style>
 
 </body>
 
