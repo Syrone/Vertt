@@ -301,6 +301,199 @@
 	}
 }
 
+//offcanvas popup
+.off_canvas-skin,
+.off_canvas-eye,
+.off_canvas-breast,
+.off_canvas-hair,
+.off_canvas-mouth,
+.off_canvas-foot,
+.off_canvas-shoulder,
+.off_canvas-pubic,
+.off_canvas-vagina,
+.off_canvas-other {
+	width: 450px;
+	position: fixed;
+	top: 0px;
+	right: -20px;
+	z-index: 999;
+	overflow-y: scroll;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.70);
+	backdrop-filter: blur(10px) saturate(150%) contrast(100%);
+	-webkit-backdrop-filter: blur(10px) saturate(150%) contrast(100%);
+}
+
+.container_product_popup {
+	margin-top: 100px;
+	border-bottom: 2px solid var(--gray-light-color);
+}
+
+.container_product_popup,
+.container_product_bottom {
+	padding: 30px 25px 30px 40px;
+
+	.button {
+		max-width: 100%;
+	}
+}
+
+.container_product_scrollbar {
+	padding: 10px 25px 10px 10px;
+	max-height: 550px;
+	overflow-y: auto;
+	overflow-x: hidden;
+
+	&::-webkit-scrollbar {
+		width: 8px;
+
+		&-track {
+			border-radius: 16px;
+			background-color: var(--dark-light-color);
+		}
+
+		&-thumb {
+			border-radius: 16px;
+			background-color: var(--dark-color);
+		}
+	}
+}
+
+.off_canvas-product-total {
+	display: flex;
+	justify-content: space-between;
+	font-family: var(--Swis);
+	font-size: var(--fz-1);
+	margin-bottom: 50px;
+}
+
+//offcanvas popup Блок с выбором input radio
+.off_canvas-product-input {
+	font-family: var(--Swis);
+	display: flex;
+	width: 100%;
+	border-radius: 20px;
+	padding: 15px;
+	margin: 0;
+	box-shadow: var(--box-shadow-3);
+	background-color: #fff;
+	cursor: pointer;
+
+	transition: box-shadow 0.3s ease-in-out;
+	position: relative;
+
+	&::after {
+		content: '';
+		position: absolute;
+		inset: 0;
+		box-shadow: 0;
+		border-radius: 20px;
+
+		transition: box-shadow 0.3s ease-in-out;
+	}
+
+	&+.off_canvas-product-input {
+		margin-top: 30px;
+	}
+
+	&.checked {
+		box-shadow: none;
+
+		&::after {
+			box-shadow: inset 1px 1px 10px -1px;
+		}
+	}
+}
+
+.off_canvas-product-details {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.off_canvas-product-image {
+	width: 80px;
+	height: 80px;
+	border-radius: 12px;
+	overflow: hidden;
+	flex-shrink: 0;
+
+	img {
+		object-fit: cover;
+	}
+}
+
+.off_canvas-product-info {
+	margin-inline: 20px;
+
+	h3 {
+		font-size: var(--fz-2);
+		font-weight: 400;
+		line-height: 1;
+		margin-bottom: 4px;
+	}
+
+	span {
+		display: block;
+		font-size: var(--fz-2);
+		line-height: 1;
+	}
+}
+
+.off_canvas-product-radio {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+	display: block;
+	width: 20px;
+	height: 20px;
+	border: 3px solid var(--gray-light-color);
+	border-radius: 100%;
+	margin-block: auto;
+	flex-shrink: 0;
+	cursor: pointer;
+	transition: border-color .3s ease-in-out;
+
+	position: relative;
+
+	&::after {
+		content: '';
+		display: block;
+		width: 8px;
+		height: 8px;
+		background-color: transparent;
+		border-radius: 100%;
+
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		opacity: 0;
+		transition: background-color .3s ease-in-out, opacity .3s ease-in-out;
+	}
+
+	&:checked {
+		border-color: var(--dark-color);
+
+		&::after {
+			content: '';
+			display: block;
+			width: 8px;
+			height: 8px;
+			background-color: var(--dark-color);
+			border-radius: 100%;
+
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			opacity: 1;
+		}
+	}
+}
+
+
 //Кастомный Select
 .custom-select {
 	width: 100%;
@@ -1102,6 +1295,7 @@
 		top: 20px;
 		right: 20px;
 		z-index: 10;
+
 		.icon {
 			width: 30px;
 		}
@@ -1641,6 +1835,30 @@
 				padding: 0 !important;
 			}
 		}
+	}
+
+	//offcanvas popup
+	.off_canvas-skin {
+		width: 100%;
+		right: 0;
+	}
+
+	.off_canvas-product-input+.off_canvas-product-input {
+		margin-top: 20px;
+	}
+
+	.container_product_popup,
+	.container_product_bottom {
+		padding: 10px;
+	}
+
+	.container_product_scrollbar {
+		padding: 10px;
+	}
+
+	.off_canvas-product-image {
+		width: 60px;
+		height: 60px;
 	}
 }
 

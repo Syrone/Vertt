@@ -495,90 +495,1196 @@ text-decoration: underline;
 		</div>
 	</div>
 	<!-- Popups -->
-	<div id="viewGallery" class="custom-popup">
-		<div class="custom-popup-content">
-			<div class="custom-popup-inner popup-inner">
-				<div class="popup-inner-header">
-					<div class="wr">
-						<span>Hanky code</span>
-
-						<div class="inner-header-block">
-							<div class="block-share">
-								<a href="#" class="block-share-item">
-									<span class="icon icon-share">
-										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-											<path fill="none" d="M0 0h24v24H0V0z" />
-											<path
-												d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z" />
-										</svg>
-									</span>
-									Share pic
-								</a>
-							</div>
-
-							<button type="button" class="custom-popup-close button-close">
-								Close
-								<span class="icon icon-close">
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-										<path
-											d="M17 2C8.716 2 2 8.716 2 17s6.716 15 15 15 15-6.716 15-15S25.284 2 17 2zm0 28C9.832 30 4 24.168 4 17S9.832 4 17 4s13 5.832 13 13-5.832 13-13 13zm5.536-19.95-5.498 5.498-4.93-5.498a1 1 0 0 0-1.414 1.414l4.932 5.498-5.574 5.574a1 1 0 0 0 1.414 1.414l5.498-5.498 4.932 5.498a1 1 0 0 0 1.414-1.414l-4.934-5.498 5.574-5.574a1 1 0 0 0-1.414-1.414z" />
-									</svg>
+	<div class="off_canvas-skin offcanvas-popup popup--skin">
+		<div class="account-icon_close">
+			<div class="heading_off_canvas">
+				<svg width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<mask id="path-1-inside-1_121_269" fill="white">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M10.9968 0.00101961C10.9568 0.00034106 10.9166 0 10.8764 0H11.1236C11.0812 0 11.0389 0.000340798 10.9968 0.00101961ZM10.9968 0.00101961C7.59672 0.0557649 4.94382 2.30902 4.94382 5.30115H2.7191C1.23596 5.30115 0 6.56333 0 8.07794V24.9911C0 26.5057 1.23596 27.7679 2.7191 27.7679H19.2809C20.764 27.7679 22 26.5057 22 24.9911V8.07794C22 6.56333 20.764 5.30115 19.2809 5.30115H17.0562C17.0562 2.55663 14.3999 0.0587182 10.9968 0.00101961ZM11.1234 1.26172C13.5953 1.26172 15.82 3.02877 15.82 5.30069H6.42675C6.42675 3.02877 8.40428 1.26172 11.1234 1.26172Z">
+						</path>
+					</mask>
+					<path class="svg-stroke" fill-rule="evenodd" clip-rule="evenodd"
+						d="M10.9968 0.00101961C10.9568 0.00034106 10.9166 0 10.8764 0H11.1236C11.0812 0 11.0389 0.000340798 10.9968 0.00101961ZM10.9968 0.00101961C7.59672 0.0557649 4.94382 2.30902 4.94382 5.30115H2.7191C1.23596 5.30115 0 6.56333 0 8.07794V24.9911C0 26.5057 1.23596 27.7679 2.7191 27.7679H19.2809C20.764 27.7679 22 26.5057 22 24.9911V8.07794C22 6.56333 20.764 5.30115 19.2809 5.30115H17.0562C17.0562 2.55663 14.3999 0.0587182 10.9968 0.00101961ZM11.1234 1.26172C13.5953 1.26172 15.82 3.02877 15.82 5.30069H6.42675C6.42675 3.02877 8.40428 1.26172 11.1234 1.26172Z"
+						fill="#4D4D4D"></path>
+					<path
+						d="M4.94382 5.30115V6.30115H5.94382V5.30115H4.94382ZM17.0562 5.30115H16.0562V6.30115H17.0562V5.30115ZM15.82 5.30069V6.30069H16.82V5.30069H15.82ZM6.42675 5.30069H5.42675V6.30069H6.42675V5.30069ZM10.8764 1C10.911 1 10.9455 1.00029 10.9798 1.00088L11.0137 -0.998837C10.9681 -0.999611 10.9223 -1 10.8764 -1V1ZM11.1236 -1H10.8764V1H11.1236V-1ZM11.0129 1.00089C11.0497 1.0003 11.0866 1 11.1236 1V-1C11.0758 -1 11.0282 -0.999616 10.9807 -0.998851L11.0129 1.00089ZM5.94382 5.30115C5.94382 2.9964 8.0056 1.04931 11.0129 1.00089L10.9807 -0.998851C7.18785 -0.937781 3.94382 1.62164 3.94382 5.30115H5.94382ZM2.7191 6.30115H4.94382V4.30115H2.7191V6.30115ZM1 8.07794C1 7.09571 1.80793 6.30115 2.7191 6.30115V4.30115C0.663982 4.30115 -1 6.03094 -1 8.07794H1ZM1 24.9911V8.07794H-1V24.9911H1ZM2.7191 26.7679C1.80793 26.7679 1 25.9734 1 24.9911H-1C-1 27.0381 0.663982 28.7679 2.7191 28.7679V26.7679ZM19.2809 26.7679H2.7191V28.7679H19.2809V26.7679ZM21 24.9911C21 25.9734 20.1921 26.7679 19.2809 26.7679V28.7679C21.336 28.7679 23 27.0381 23 24.9911H21ZM21 8.07794V24.9911H23V8.07794H21ZM19.2809 6.30115C20.1921 6.30115 21 7.09572 21 8.07794H23C23 6.03094 21.336 4.30115 19.2809 4.30115V6.30115ZM17.0562 6.30115H19.2809V4.30115H17.0562V6.30115ZM10.9798 1.00088C13.9608 1.05142 16.0562 3.21798 16.0562 5.30115H18.0562C18.0562 1.89529 14.839 -0.933981 11.0137 -0.998837L10.9798 1.00088ZM16.82 5.30069C16.82 2.31907 13.9758 0.261719 11.1234 0.261719V2.26172C13.2148 2.26172 14.82 3.73846 14.82 5.30069H16.82ZM6.42675 6.30069H15.82V4.30069H6.42675V6.30069ZM11.1234 0.261719C7.98739 0.261719 5.42675 2.35018 5.42675 5.30069H7.42675C7.42675 3.70736 8.82117 2.26172 11.1234 2.26172V0.261719Z"
+						fill="#4D4D4D" mask="url(#path-1-inside-1_121_269)"></path>
+				</svg>
+				<h2>Skin Color</h2>
+			</div>
+			<img src="./wp-content/uploads/2023/01/Frame-1.svg" alt="Close" class="close_off_canvas js-popup-close">
+		</div>
+		<form action="#">
+			<div class="container_product_popup">
+				<div class="container_product_scrollbar">
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image" style="background-color: #f6d0b1;"></div>
+							<div class="off_canvas-product-info">
+								<h3>
+									White
+								</h3>
+								<span>
+									$XX.XX
 								</span>
-							</button>
+							</div>
 						</div>
-					</div>
-				</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
 
-				<div class="popup-inner-body">
-					<div class="wr">
-						<div class="wrapper-popup-swiper">
-							<div class="swiper swiper-effect-card2">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide effect-card-item2">
-										<img src="./images/dist/Hanky/green_hanky.jpg" alt="Product">
-									</div>
-									<div class="swiper-slide effect-card-item2">
-										<img src="./images/dist/Hanky/yellow_hanky.jpg" alt="Product">
-									</div>
-									<div class="swiper-slide effect-card-item2">
-										<img src="./images/dist/Hanky/orange_hanky.jpg" alt="Product">
-									</div>
-									<div class="swiper-slide effect-card-item2">
-										<img src="./images/dist/Hanky/magenta_hanky.jpg" alt="Product">
-									</div>
-									<div class="swiper-slide effect-card-item2">
-										<img src="./images/dist/Hanky/dark_blue_hanky.jpg" alt="Product">
-									</div>
-								</div>
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image" style="background-color: #e8b58f;"></div>
+							<div class="off_canvas-product-info">
+								<h3>
+									White
+								</h3>
+								<span>
+									$XX.XX
+								</span>
 							</div>
-
-							<div class="swiper-button-prev swiper-effect-card2-prev">
-								<div class="effect-card2-prev">
-									<span class="icon icon-arrow-right">
-										<svg xmlns="http://www.w3.org/2000/svg" viewbox=" 0 0 11 20">
-											<path fill-rule="evenodd"
-												d="M10.634.292a1.063 1.063 0 0 0-1.464 0L.607 8.556a1.95 1.95 0 0 0 0 2.827l8.625 8.325c.4.385 1.048.39 1.454.01a.975.975 0 0 0 .01-1.425l-7.893-7.617a.975.975 0 0 1 0-1.414l7.83-7.557a.974.974 0 0 0 0-1.413" />
-										</svg>
-									</span>
-								</div>
-							</div>
-							<div class="swiper-button-next swiper-effect-card2-next">
-								<div class="effect-card2-next">
-									<span class="icon icon-arrow-left">
-										<svg xmlns="http://www.w3.org/2000/svg" viewbox=" 0 0 11 20">
-											<path fill-rule="evenodd"
-												d="M10.634.292a1.063 1.063 0 0 0-1.464 0L.607 8.556a1.95 1.95 0 0 0 0 2.827l8.625 8.325c.4.385 1.048.39 1.454.01a.975.975 0 0 0 .01-1.425l-7.893-7.617a.975.975 0 0 1 0-1.414l7.83-7.557a.974.974 0 0 0 0-1.413" />
-										</svg>
-									</span>
-								</div>
-							</div>
-
-							<div class="swiper-scrollbar swiper-effect-card2-scrollbar"></div>
 						</div>
-					</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image" style="background-color: #d29f7c;"></div>
+							<div class="off_canvas-product-info">
+								<h3>
+									White
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image" style="background-color: #bc7950;"></div>
+							<div class="off_canvas-product-info">
+								<h3>
+									White
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image" style="background-color: #a65e2b;"></div>
+							<div class="off_canvas-product-info">
+								<h3>
+									White
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image" style="background-color: #391f1c;"></div>
+							<div class="off_canvas-product-info">
+								<h3>
+									White
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
 				</div>
 			</div>
+
+			<div class="container_product_bottom">
+				<div class="off_canvas-product-total">
+					Subtotal:
+					<span>$XX.XX</span>
+				</div>
+
+				<button type="submit" class="button primary-button">
+					Add to cart
+				</button>
+			</div>
+		</form>
+	</div>
+	<div class="off_canvas-breast offcanvas-popup popup--breast">
+		<div class="account-icon_close">
+			<div class="heading_off_canvas">
+				<svg width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<mask id="path-1-inside-1_121_269" fill="white">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M10.9968 0.00101961C10.9568 0.00034106 10.9166 0 10.8764 0H11.1236C11.0812 0 11.0389 0.000340798 10.9968 0.00101961ZM10.9968 0.00101961C7.59672 0.0557649 4.94382 2.30902 4.94382 5.30115H2.7191C1.23596 5.30115 0 6.56333 0 8.07794V24.9911C0 26.5057 1.23596 27.7679 2.7191 27.7679H19.2809C20.764 27.7679 22 26.5057 22 24.9911V8.07794C22 6.56333 20.764 5.30115 19.2809 5.30115H17.0562C17.0562 2.55663 14.3999 0.0587182 10.9968 0.00101961ZM11.1234 1.26172C13.5953 1.26172 15.82 3.02877 15.82 5.30069H6.42675C6.42675 3.02877 8.40428 1.26172 11.1234 1.26172Z">
+						</path>
+					</mask>
+					<path class="svg-stroke" fill-rule="evenodd" clip-rule="evenodd"
+						d="M10.9968 0.00101961C10.9568 0.00034106 10.9166 0 10.8764 0H11.1236C11.0812 0 11.0389 0.000340798 10.9968 0.00101961ZM10.9968 0.00101961C7.59672 0.0557649 4.94382 2.30902 4.94382 5.30115H2.7191C1.23596 5.30115 0 6.56333 0 8.07794V24.9911C0 26.5057 1.23596 27.7679 2.7191 27.7679H19.2809C20.764 27.7679 22 26.5057 22 24.9911V8.07794C22 6.56333 20.764 5.30115 19.2809 5.30115H17.0562C17.0562 2.55663 14.3999 0.0587182 10.9968 0.00101961ZM11.1234 1.26172C13.5953 1.26172 15.82 3.02877 15.82 5.30069H6.42675C6.42675 3.02877 8.40428 1.26172 11.1234 1.26172Z"
+						fill="#4D4D4D"></path>
+					<path
+						d="M4.94382 5.30115V6.30115H5.94382V5.30115H4.94382ZM17.0562 5.30115H16.0562V6.30115H17.0562V5.30115ZM15.82 5.30069V6.30069H16.82V5.30069H15.82ZM6.42675 5.30069H5.42675V6.30069H6.42675V5.30069ZM10.8764 1C10.911 1 10.9455 1.00029 10.9798 1.00088L11.0137 -0.998837C10.9681 -0.999611 10.9223 -1 10.8764 -1V1ZM11.1236 -1H10.8764V1H11.1236V-1ZM11.0129 1.00089C11.0497 1.0003 11.0866 1 11.1236 1V-1C11.0758 -1 11.0282 -0.999616 10.9807 -0.998851L11.0129 1.00089ZM5.94382 5.30115C5.94382 2.9964 8.0056 1.04931 11.0129 1.00089L10.9807 -0.998851C7.18785 -0.937781 3.94382 1.62164 3.94382 5.30115H5.94382ZM2.7191 6.30115H4.94382V4.30115H2.7191V6.30115ZM1 8.07794C1 7.09571 1.80793 6.30115 2.7191 6.30115V4.30115C0.663982 4.30115 -1 6.03094 -1 8.07794H1ZM1 24.9911V8.07794H-1V24.9911H1ZM2.7191 26.7679C1.80793 26.7679 1 25.9734 1 24.9911H-1C-1 27.0381 0.663982 28.7679 2.7191 28.7679V26.7679ZM19.2809 26.7679H2.7191V28.7679H19.2809V26.7679ZM21 24.9911C21 25.9734 20.1921 26.7679 19.2809 26.7679V28.7679C21.336 28.7679 23 27.0381 23 24.9911H21ZM21 8.07794V24.9911H23V8.07794H21ZM19.2809 6.30115C20.1921 6.30115 21 7.09572 21 8.07794H23C23 6.03094 21.336 4.30115 19.2809 4.30115V6.30115ZM17.0562 6.30115H19.2809V4.30115H17.0562V6.30115ZM10.9798 1.00088C13.9608 1.05142 16.0562 3.21798 16.0562 5.30115H18.0562C18.0562 1.89529 14.839 -0.933981 11.0137 -0.998837L10.9798 1.00088ZM16.82 5.30069C16.82 2.31907 13.9758 0.261719 11.1234 0.261719V2.26172C13.2148 2.26172 14.82 3.73846 14.82 5.30069H16.82ZM6.42675 6.30069H15.82V4.30069H6.42675V6.30069ZM11.1234 0.261719C7.98739 0.261719 5.42675 2.35018 5.42675 5.30069H7.42675C7.42675 3.70736 8.82117 2.26172 11.1234 2.26172V0.261719Z"
+						fill="#4D4D4D" mask="url(#path-1-inside-1_121_269)"></path>
+				</svg>
+				<h2>Breast Options</h2>
+			</div>
+			<img src="./wp-content/uploads/2023/01/Frame-1.svg" alt="Close" class="close_off_canvas js-popup-close">
 		</div>
+		<form action="#">
+			<div class="container_product_popup">
+				<div class="container_product_scrollbar">
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Breast Options/Gel-Filled.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Gel filled
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Breast Options/Hollow.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Hollow
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Breast Options/Solid-TPE.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Solid TPE
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+				</div>
+			</div>
+
+			<div class="container_product_bottom">
+				<div class="off_canvas-product-total">
+					Subtotal:
+					<span>$XX.XX</span>
+				</div>
+
+				<button type="submit" class="button primary-button">
+					Add to cart
+				</button>
+			</div>
+		</form>
+	</div>
+	<div class="off_canvas-hair offcanvas-popup popup--hair">
+		<div class="account-icon_close">
+			<div class="heading_off_canvas">
+				<svg width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<mask id="path-1-inside-1_121_269" fill="white">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M10.9968 0.00101961C10.9568 0.00034106 10.9166 0 10.8764 0H11.1236C11.0812 0 11.0389 0.000340798 10.9968 0.00101961ZM10.9968 0.00101961C7.59672 0.0557649 4.94382 2.30902 4.94382 5.30115H2.7191C1.23596 5.30115 0 6.56333 0 8.07794V24.9911C0 26.5057 1.23596 27.7679 2.7191 27.7679H19.2809C20.764 27.7679 22 26.5057 22 24.9911V8.07794C22 6.56333 20.764 5.30115 19.2809 5.30115H17.0562C17.0562 2.55663 14.3999 0.0587182 10.9968 0.00101961ZM11.1234 1.26172C13.5953 1.26172 15.82 3.02877 15.82 5.30069H6.42675C6.42675 3.02877 8.40428 1.26172 11.1234 1.26172Z">
+						</path>
+					</mask>
+					<path class="svg-stroke" fill-rule="evenodd" clip-rule="evenodd"
+						d="M10.9968 0.00101961C10.9568 0.00034106 10.9166 0 10.8764 0H11.1236C11.0812 0 11.0389 0.000340798 10.9968 0.00101961ZM10.9968 0.00101961C7.59672 0.0557649 4.94382 2.30902 4.94382 5.30115H2.7191C1.23596 5.30115 0 6.56333 0 8.07794V24.9911C0 26.5057 1.23596 27.7679 2.7191 27.7679H19.2809C20.764 27.7679 22 26.5057 22 24.9911V8.07794C22 6.56333 20.764 5.30115 19.2809 5.30115H17.0562C17.0562 2.55663 14.3999 0.0587182 10.9968 0.00101961ZM11.1234 1.26172C13.5953 1.26172 15.82 3.02877 15.82 5.30069H6.42675C6.42675 3.02877 8.40428 1.26172 11.1234 1.26172Z"
+						fill="#4D4D4D"></path>
+					<path
+						d="M4.94382 5.30115V6.30115H5.94382V5.30115H4.94382ZM17.0562 5.30115H16.0562V6.30115H17.0562V5.30115ZM15.82 5.30069V6.30069H16.82V5.30069H15.82ZM6.42675 5.30069H5.42675V6.30069H6.42675V5.30069ZM10.8764 1C10.911 1 10.9455 1.00029 10.9798 1.00088L11.0137 -0.998837C10.9681 -0.999611 10.9223 -1 10.8764 -1V1ZM11.1236 -1H10.8764V1H11.1236V-1ZM11.0129 1.00089C11.0497 1.0003 11.0866 1 11.1236 1V-1C11.0758 -1 11.0282 -0.999616 10.9807 -0.998851L11.0129 1.00089ZM5.94382 5.30115C5.94382 2.9964 8.0056 1.04931 11.0129 1.00089L10.9807 -0.998851C7.18785 -0.937781 3.94382 1.62164 3.94382 5.30115H5.94382ZM2.7191 6.30115H4.94382V4.30115H2.7191V6.30115ZM1 8.07794C1 7.09571 1.80793 6.30115 2.7191 6.30115V4.30115C0.663982 4.30115 -1 6.03094 -1 8.07794H1ZM1 24.9911V8.07794H-1V24.9911H1ZM2.7191 26.7679C1.80793 26.7679 1 25.9734 1 24.9911H-1C-1 27.0381 0.663982 28.7679 2.7191 28.7679V26.7679ZM19.2809 26.7679H2.7191V28.7679H19.2809V26.7679ZM21 24.9911C21 25.9734 20.1921 26.7679 19.2809 26.7679V28.7679C21.336 28.7679 23 27.0381 23 24.9911H21ZM21 8.07794V24.9911H23V8.07794H21ZM19.2809 6.30115C20.1921 6.30115 21 7.09572 21 8.07794H23C23 6.03094 21.336 4.30115 19.2809 4.30115V6.30115ZM17.0562 6.30115H19.2809V4.30115H17.0562V6.30115ZM10.9798 1.00088C13.9608 1.05142 16.0562 3.21798 16.0562 5.30115H18.0562C18.0562 1.89529 14.839 -0.933981 11.0137 -0.998837L10.9798 1.00088ZM16.82 5.30069C16.82 2.31907 13.9758 0.261719 11.1234 0.261719V2.26172C13.2148 2.26172 14.82 3.73846 14.82 5.30069H16.82ZM6.42675 6.30069H15.82V4.30069H6.42675V6.30069ZM11.1234 0.261719C7.98739 0.261719 5.42675 2.35018 5.42675 5.30069H7.42675C7.42675 3.70736 8.82117 2.26172 11.1234 2.26172V0.261719Z"
+						fill="#4D4D4D" mask="url(#path-1-inside-1_121_269)"></path>
+				</svg>
+				<h2>Hair Style</h2>
+			</div>
+			<img src="./wp-content/uploads/2023/01/Frame-1.svg" alt="Close" class="close_off_canvas js-popup-close">
+		</div>
+		<form action="#">
+			<div class="container_product_popup">
+				<div class="container_product_scrollbar">
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Hair Style/01.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Brown
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Hair Style/02.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Brown
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Hair Style/03.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Brown
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Hair Style/04.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Brown
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Hair Style/05.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Brown
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Hair Style/06.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Brown
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Hair Style/07.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Brown
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Hair Style/08.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Brown
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Hair Style/09.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Brown
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Hair Style/10.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Brown
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Hair Style/11.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Brown
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Hair Style/12.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Brown
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Hair Style/13.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Brown
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Hair Style/14.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Brown
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Hair Style/15.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Brown
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Hair Style/16.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Brown
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+				</div>
+			</div>
+
+			<div class="container_product_bottom">
+				<div class="off_canvas-product-total">
+					Subtotal:
+					<span>$XX.XX</span>
+				</div>
+
+				<button type="submit" class="button primary-button">
+					Add to cart
+				</button>
+			</div>
+		</form>
+	</div>
+	<div class="off_canvas-mouth offcanvas-popup popup--mouth">
+		<div class="account-icon_close">
+			<div class="heading_off_canvas">
+				<svg width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<mask id="path-1-inside-1_121_269" fill="white">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M10.9968 0.00101961C10.9568 0.00034106 10.9166 0 10.8764 0H11.1236C11.0812 0 11.0389 0.000340798 10.9968 0.00101961ZM10.9968 0.00101961C7.59672 0.0557649 4.94382 2.30902 4.94382 5.30115H2.7191C1.23596 5.30115 0 6.56333 0 8.07794V24.9911C0 26.5057 1.23596 27.7679 2.7191 27.7679H19.2809C20.764 27.7679 22 26.5057 22 24.9911V8.07794C22 6.56333 20.764 5.30115 19.2809 5.30115H17.0562C17.0562 2.55663 14.3999 0.0587182 10.9968 0.00101961ZM11.1234 1.26172C13.5953 1.26172 15.82 3.02877 15.82 5.30069H6.42675C6.42675 3.02877 8.40428 1.26172 11.1234 1.26172Z">
+						</path>
+					</mask>
+					<path class="svg-stroke" fill-rule="evenodd" clip-rule="evenodd"
+						d="M10.9968 0.00101961C10.9568 0.00034106 10.9166 0 10.8764 0H11.1236C11.0812 0 11.0389 0.000340798 10.9968 0.00101961ZM10.9968 0.00101961C7.59672 0.0557649 4.94382 2.30902 4.94382 5.30115H2.7191C1.23596 5.30115 0 6.56333 0 8.07794V24.9911C0 26.5057 1.23596 27.7679 2.7191 27.7679H19.2809C20.764 27.7679 22 26.5057 22 24.9911V8.07794C22 6.56333 20.764 5.30115 19.2809 5.30115H17.0562C17.0562 2.55663 14.3999 0.0587182 10.9968 0.00101961ZM11.1234 1.26172C13.5953 1.26172 15.82 3.02877 15.82 5.30069H6.42675C6.42675 3.02877 8.40428 1.26172 11.1234 1.26172Z"
+						fill="#4D4D4D"></path>
+					<path
+						d="M4.94382 5.30115V6.30115H5.94382V5.30115H4.94382ZM17.0562 5.30115H16.0562V6.30115H17.0562V5.30115ZM15.82 5.30069V6.30069H16.82V5.30069H15.82ZM6.42675 5.30069H5.42675V6.30069H6.42675V5.30069ZM10.8764 1C10.911 1 10.9455 1.00029 10.9798 1.00088L11.0137 -0.998837C10.9681 -0.999611 10.9223 -1 10.8764 -1V1ZM11.1236 -1H10.8764V1H11.1236V-1ZM11.0129 1.00089C11.0497 1.0003 11.0866 1 11.1236 1V-1C11.0758 -1 11.0282 -0.999616 10.9807 -0.998851L11.0129 1.00089ZM5.94382 5.30115C5.94382 2.9964 8.0056 1.04931 11.0129 1.00089L10.9807 -0.998851C7.18785 -0.937781 3.94382 1.62164 3.94382 5.30115H5.94382ZM2.7191 6.30115H4.94382V4.30115H2.7191V6.30115ZM1 8.07794C1 7.09571 1.80793 6.30115 2.7191 6.30115V4.30115C0.663982 4.30115 -1 6.03094 -1 8.07794H1ZM1 24.9911V8.07794H-1V24.9911H1ZM2.7191 26.7679C1.80793 26.7679 1 25.9734 1 24.9911H-1C-1 27.0381 0.663982 28.7679 2.7191 28.7679V26.7679ZM19.2809 26.7679H2.7191V28.7679H19.2809V26.7679ZM21 24.9911C21 25.9734 20.1921 26.7679 19.2809 26.7679V28.7679C21.336 28.7679 23 27.0381 23 24.9911H21ZM21 8.07794V24.9911H23V8.07794H21ZM19.2809 6.30115C20.1921 6.30115 21 7.09572 21 8.07794H23C23 6.03094 21.336 4.30115 19.2809 4.30115V6.30115ZM17.0562 6.30115H19.2809V4.30115H17.0562V6.30115ZM10.9798 1.00088C13.9608 1.05142 16.0562 3.21798 16.0562 5.30115H18.0562C18.0562 1.89529 14.839 -0.933981 11.0137 -0.998837L10.9798 1.00088ZM16.82 5.30069C16.82 2.31907 13.9758 0.261719 11.1234 0.261719V2.26172C13.2148 2.26172 14.82 3.73846 14.82 5.30069H16.82ZM6.42675 6.30069H15.82V4.30069H6.42675V6.30069ZM11.1234 0.261719C7.98739 0.261719 5.42675 2.35018 5.42675 5.30069H7.42675C7.42675 3.70736 8.82117 2.26172 11.1234 2.26172V0.261719Z"
+						fill="#4D4D4D" mask="url(#path-1-inside-1_121_269)"></path>
+				</svg>
+				<h2>Mouth Type</h2>
+			</div>
+			<img src="./wp-content/uploads/2023/01/Frame-1.svg" alt="Close" class="close_off_canvas js-popup-close">
+		</div>
+		<form action="#">
+			<div class="container_product_popup">
+				<div class="container_product_scrollbar">
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Mouth Type/Fixed-Tongue.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Fixed tongue
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Mouth Type/Textured.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Textured
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+				</div>
+			</div>
+
+			<div class="container_product_bottom">
+				<div class="off_canvas-product-total">
+					Subtotal:
+					<span>$XX.XX</span>
+				</div>
+
+				<button type="submit" class="button primary-button">
+					Add to cart
+				</button>
+			</div>
+		</form>
+	</div>
+	<div class="off_canvas-foot offcanvas-popup popup--foot">
+		<div class="account-icon_close">
+			<div class="heading_off_canvas">
+				<svg width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<mask id="path-1-inside-1_121_269" fill="white">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M10.9968 0.00101961C10.9568 0.00034106 10.9166 0 10.8764 0H11.1236C11.0812 0 11.0389 0.000340798 10.9968 0.00101961ZM10.9968 0.00101961C7.59672 0.0557649 4.94382 2.30902 4.94382 5.30115H2.7191C1.23596 5.30115 0 6.56333 0 8.07794V24.9911C0 26.5057 1.23596 27.7679 2.7191 27.7679H19.2809C20.764 27.7679 22 26.5057 22 24.9911V8.07794C22 6.56333 20.764 5.30115 19.2809 5.30115H17.0562C17.0562 2.55663 14.3999 0.0587182 10.9968 0.00101961ZM11.1234 1.26172C13.5953 1.26172 15.82 3.02877 15.82 5.30069H6.42675C6.42675 3.02877 8.40428 1.26172 11.1234 1.26172Z">
+						</path>
+					</mask>
+					<path class="svg-stroke" fill-rule="evenodd" clip-rule="evenodd"
+						d="M10.9968 0.00101961C10.9568 0.00034106 10.9166 0 10.8764 0H11.1236C11.0812 0 11.0389 0.000340798 10.9968 0.00101961ZM10.9968 0.00101961C7.59672 0.0557649 4.94382 2.30902 4.94382 5.30115H2.7191C1.23596 5.30115 0 6.56333 0 8.07794V24.9911C0 26.5057 1.23596 27.7679 2.7191 27.7679H19.2809C20.764 27.7679 22 26.5057 22 24.9911V8.07794C22 6.56333 20.764 5.30115 19.2809 5.30115H17.0562C17.0562 2.55663 14.3999 0.0587182 10.9968 0.00101961ZM11.1234 1.26172C13.5953 1.26172 15.82 3.02877 15.82 5.30069H6.42675C6.42675 3.02877 8.40428 1.26172 11.1234 1.26172Z"
+						fill="#4D4D4D"></path>
+					<path
+						d="M4.94382 5.30115V6.30115H5.94382V5.30115H4.94382ZM17.0562 5.30115H16.0562V6.30115H17.0562V5.30115ZM15.82 5.30069V6.30069H16.82V5.30069H15.82ZM6.42675 5.30069H5.42675V6.30069H6.42675V5.30069ZM10.8764 1C10.911 1 10.9455 1.00029 10.9798 1.00088L11.0137 -0.998837C10.9681 -0.999611 10.9223 -1 10.8764 -1V1ZM11.1236 -1H10.8764V1H11.1236V-1ZM11.0129 1.00089C11.0497 1.0003 11.0866 1 11.1236 1V-1C11.0758 -1 11.0282 -0.999616 10.9807 -0.998851L11.0129 1.00089ZM5.94382 5.30115C5.94382 2.9964 8.0056 1.04931 11.0129 1.00089L10.9807 -0.998851C7.18785 -0.937781 3.94382 1.62164 3.94382 5.30115H5.94382ZM2.7191 6.30115H4.94382V4.30115H2.7191V6.30115ZM1 8.07794C1 7.09571 1.80793 6.30115 2.7191 6.30115V4.30115C0.663982 4.30115 -1 6.03094 -1 8.07794H1ZM1 24.9911V8.07794H-1V24.9911H1ZM2.7191 26.7679C1.80793 26.7679 1 25.9734 1 24.9911H-1C-1 27.0381 0.663982 28.7679 2.7191 28.7679V26.7679ZM19.2809 26.7679H2.7191V28.7679H19.2809V26.7679ZM21 24.9911C21 25.9734 20.1921 26.7679 19.2809 26.7679V28.7679C21.336 28.7679 23 27.0381 23 24.9911H21ZM21 8.07794V24.9911H23V8.07794H21ZM19.2809 6.30115C20.1921 6.30115 21 7.09572 21 8.07794H23C23 6.03094 21.336 4.30115 19.2809 4.30115V6.30115ZM17.0562 6.30115H19.2809V4.30115H17.0562V6.30115ZM10.9798 1.00088C13.9608 1.05142 16.0562 3.21798 16.0562 5.30115H18.0562C18.0562 1.89529 14.839 -0.933981 11.0137 -0.998837L10.9798 1.00088ZM16.82 5.30069C16.82 2.31907 13.9758 0.261719 11.1234 0.261719V2.26172C13.2148 2.26172 14.82 3.73846 14.82 5.30069H16.82ZM6.42675 6.30069H15.82V4.30069H6.42675V6.30069ZM11.1234 0.261719C7.98739 0.261719 5.42675 2.35018 5.42675 5.30069H7.42675C7.42675 3.70736 8.82117 2.26172 11.1234 2.26172V0.261719Z"
+						fill="#4D4D4D" mask="url(#path-1-inside-1_121_269)"></path>
+				</svg>
+				<h2>Foot Type</h2>
+			</div>
+			<img src="./wp-content/uploads/2023/01/Frame-1.svg" alt="Close" class="close_off_canvas js-popup-close">
+		</div>
+		<form action="#">
+			<div class="container_product_popup">
+				<div class="container_product_scrollbar">
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Foot Type/Regular.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Regular
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Foot Type/Standing.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Standing
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+				</div>
+			</div>
+
+			<div class="container_product_bottom">
+				<div class="off_canvas-product-total">
+					Subtotal:
+					<span>$XX.XX</span>
+				</div>
+
+				<button type="submit" class="button primary-button">
+					Add to cart
+				</button>
+			</div>
+		</form>
+	</div>
+	<div class="off_canvas-shoulder offcanvas-popup popup--shoulder">
+		<div class="account-icon_close">
+			<div class="heading_off_canvas">
+				<svg width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<mask id="path-1-inside-1_121_269" fill="white">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M10.9968 0.00101961C10.9568 0.00034106 10.9166 0 10.8764 0H11.1236C11.0812 0 11.0389 0.000340798 10.9968 0.00101961ZM10.9968 0.00101961C7.59672 0.0557649 4.94382 2.30902 4.94382 5.30115H2.7191C1.23596 5.30115 0 6.56333 0 8.07794V24.9911C0 26.5057 1.23596 27.7679 2.7191 27.7679H19.2809C20.764 27.7679 22 26.5057 22 24.9911V8.07794C22 6.56333 20.764 5.30115 19.2809 5.30115H17.0562C17.0562 2.55663 14.3999 0.0587182 10.9968 0.00101961ZM11.1234 1.26172C13.5953 1.26172 15.82 3.02877 15.82 5.30069H6.42675C6.42675 3.02877 8.40428 1.26172 11.1234 1.26172Z">
+						</path>
+					</mask>
+					<path class="svg-stroke" fill-rule="evenodd" clip-rule="evenodd"
+						d="M10.9968 0.00101961C10.9568 0.00034106 10.9166 0 10.8764 0H11.1236C11.0812 0 11.0389 0.000340798 10.9968 0.00101961ZM10.9968 0.00101961C7.59672 0.0557649 4.94382 2.30902 4.94382 5.30115H2.7191C1.23596 5.30115 0 6.56333 0 8.07794V24.9911C0 26.5057 1.23596 27.7679 2.7191 27.7679H19.2809C20.764 27.7679 22 26.5057 22 24.9911V8.07794C22 6.56333 20.764 5.30115 19.2809 5.30115H17.0562C17.0562 2.55663 14.3999 0.0587182 10.9968 0.00101961ZM11.1234 1.26172C13.5953 1.26172 15.82 3.02877 15.82 5.30069H6.42675C6.42675 3.02877 8.40428 1.26172 11.1234 1.26172Z"
+						fill="#4D4D4D"></path>
+					<path
+						d="M4.94382 5.30115V6.30115H5.94382V5.30115H4.94382ZM17.0562 5.30115H16.0562V6.30115H17.0562V5.30115ZM15.82 5.30069V6.30069H16.82V5.30069H15.82ZM6.42675 5.30069H5.42675V6.30069H6.42675V5.30069ZM10.8764 1C10.911 1 10.9455 1.00029 10.9798 1.00088L11.0137 -0.998837C10.9681 -0.999611 10.9223 -1 10.8764 -1V1ZM11.1236 -1H10.8764V1H11.1236V-1ZM11.0129 1.00089C11.0497 1.0003 11.0866 1 11.1236 1V-1C11.0758 -1 11.0282 -0.999616 10.9807 -0.998851L11.0129 1.00089ZM5.94382 5.30115C5.94382 2.9964 8.0056 1.04931 11.0129 1.00089L10.9807 -0.998851C7.18785 -0.937781 3.94382 1.62164 3.94382 5.30115H5.94382ZM2.7191 6.30115H4.94382V4.30115H2.7191V6.30115ZM1 8.07794C1 7.09571 1.80793 6.30115 2.7191 6.30115V4.30115C0.663982 4.30115 -1 6.03094 -1 8.07794H1ZM1 24.9911V8.07794H-1V24.9911H1ZM2.7191 26.7679C1.80793 26.7679 1 25.9734 1 24.9911H-1C-1 27.0381 0.663982 28.7679 2.7191 28.7679V26.7679ZM19.2809 26.7679H2.7191V28.7679H19.2809V26.7679ZM21 24.9911C21 25.9734 20.1921 26.7679 19.2809 26.7679V28.7679C21.336 28.7679 23 27.0381 23 24.9911H21ZM21 8.07794V24.9911H23V8.07794H21ZM19.2809 6.30115C20.1921 6.30115 21 7.09572 21 8.07794H23C23 6.03094 21.336 4.30115 19.2809 4.30115V6.30115ZM17.0562 6.30115H19.2809V4.30115H17.0562V6.30115ZM10.9798 1.00088C13.9608 1.05142 16.0562 3.21798 16.0562 5.30115H18.0562C18.0562 1.89529 14.839 -0.933981 11.0137 -0.998837L10.9798 1.00088ZM16.82 5.30069C16.82 2.31907 13.9758 0.261719 11.1234 0.261719V2.26172C13.2148 2.26172 14.82 3.73846 14.82 5.30069H16.82ZM6.42675 6.30069H15.82V4.30069H6.42675V6.30069ZM11.1234 0.261719C7.98739 0.261719 5.42675 2.35018 5.42675 5.30069H7.42675C7.42675 3.70736 8.82117 2.26172 11.1234 2.26172V0.261719Z"
+						fill="#4D4D4D" mask="url(#path-1-inside-1_121_269)"></path>
+				</svg>
+				<h2>Shoulder Type</h2>
+			</div>
+			<img src="./wp-content/uploads/2023/01/Frame-1.svg" alt="Close" class="close_off_canvas js-popup-close">
+		</div>
+		<form action="#">
+			<div class="container_product_popup">
+				<div class="container_product_scrollbar">
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Shoulder Type/No-Shrugging.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									No shrugging
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Shoulder Type/Shrugging.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Shrugging
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+				</div>
+			</div>
+
+			<div class="container_product_bottom">
+				<div class="off_canvas-product-total">
+					Subtotal:
+					<span>$XX.XX</span>
+				</div>
+
+				<button type="submit" class="button primary-button">
+					Add to cart
+				</button>
+			</div>
+		</form>
+	</div>
+	<div class="off_canvas-eye offcanvas-popup popup--eye">
+		<div class="account-icon_close">
+			<div class="heading_off_canvas">
+				<svg width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<mask id="path-1-inside-1_121_269" fill="white">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M10.9968 0.00101961C10.9568 0.00034106 10.9166 0 10.8764 0H11.1236C11.0812 0 11.0389 0.000340798 10.9968 0.00101961ZM10.9968 0.00101961C7.59672 0.0557649 4.94382 2.30902 4.94382 5.30115H2.7191C1.23596 5.30115 0 6.56333 0 8.07794V24.9911C0 26.5057 1.23596 27.7679 2.7191 27.7679H19.2809C20.764 27.7679 22 26.5057 22 24.9911V8.07794C22 6.56333 20.764 5.30115 19.2809 5.30115H17.0562C17.0562 2.55663 14.3999 0.0587182 10.9968 0.00101961ZM11.1234 1.26172C13.5953 1.26172 15.82 3.02877 15.82 5.30069H6.42675C6.42675 3.02877 8.40428 1.26172 11.1234 1.26172Z">
+						</path>
+					</mask>
+					<path class="svg-stroke" fill-rule="evenodd" clip-rule="evenodd"
+						d="M10.9968 0.00101961C10.9568 0.00034106 10.9166 0 10.8764 0H11.1236C11.0812 0 11.0389 0.000340798 10.9968 0.00101961ZM10.9968 0.00101961C7.59672 0.0557649 4.94382 2.30902 4.94382 5.30115H2.7191C1.23596 5.30115 0 6.56333 0 8.07794V24.9911C0 26.5057 1.23596 27.7679 2.7191 27.7679H19.2809C20.764 27.7679 22 26.5057 22 24.9911V8.07794C22 6.56333 20.764 5.30115 19.2809 5.30115H17.0562C17.0562 2.55663 14.3999 0.0587182 10.9968 0.00101961ZM11.1234 1.26172C13.5953 1.26172 15.82 3.02877 15.82 5.30069H6.42675C6.42675 3.02877 8.40428 1.26172 11.1234 1.26172Z"
+						fill="#4D4D4D"></path>
+					<path
+						d="M4.94382 5.30115V6.30115H5.94382V5.30115H4.94382ZM17.0562 5.30115H16.0562V6.30115H17.0562V5.30115ZM15.82 5.30069V6.30069H16.82V5.30069H15.82ZM6.42675 5.30069H5.42675V6.30069H6.42675V5.30069ZM10.8764 1C10.911 1 10.9455 1.00029 10.9798 1.00088L11.0137 -0.998837C10.9681 -0.999611 10.9223 -1 10.8764 -1V1ZM11.1236 -1H10.8764V1H11.1236V-1ZM11.0129 1.00089C11.0497 1.0003 11.0866 1 11.1236 1V-1C11.0758 -1 11.0282 -0.999616 10.9807 -0.998851L11.0129 1.00089ZM5.94382 5.30115C5.94382 2.9964 8.0056 1.04931 11.0129 1.00089L10.9807 -0.998851C7.18785 -0.937781 3.94382 1.62164 3.94382 5.30115H5.94382ZM2.7191 6.30115H4.94382V4.30115H2.7191V6.30115ZM1 8.07794C1 7.09571 1.80793 6.30115 2.7191 6.30115V4.30115C0.663982 4.30115 -1 6.03094 -1 8.07794H1ZM1 24.9911V8.07794H-1V24.9911H1ZM2.7191 26.7679C1.80793 26.7679 1 25.9734 1 24.9911H-1C-1 27.0381 0.663982 28.7679 2.7191 28.7679V26.7679ZM19.2809 26.7679H2.7191V28.7679H19.2809V26.7679ZM21 24.9911C21 25.9734 20.1921 26.7679 19.2809 26.7679V28.7679C21.336 28.7679 23 27.0381 23 24.9911H21ZM21 8.07794V24.9911H23V8.07794H21ZM19.2809 6.30115C20.1921 6.30115 21 7.09572 21 8.07794H23C23 6.03094 21.336 4.30115 19.2809 4.30115V6.30115ZM17.0562 6.30115H19.2809V4.30115H17.0562V6.30115ZM10.9798 1.00088C13.9608 1.05142 16.0562 3.21798 16.0562 5.30115H18.0562C18.0562 1.89529 14.839 -0.933981 11.0137 -0.998837L10.9798 1.00088ZM16.82 5.30069C16.82 2.31907 13.9758 0.261719 11.1234 0.261719V2.26172C13.2148 2.26172 14.82 3.73846 14.82 5.30069H16.82ZM6.42675 6.30069H15.82V4.30069H6.42675V6.30069ZM11.1234 0.261719C7.98739 0.261719 5.42675 2.35018 5.42675 5.30069H7.42675C7.42675 3.70736 8.82117 2.26172 11.1234 2.26172V0.261719Z"
+						fill="#4D4D4D" mask="url(#path-1-inside-1_121_269)"></path>
+				</svg>
+				<h2>Eye Color</h2>
+			</div>
+			<img src="./wp-content/uploads/2023/01/Frame-1.svg" alt="Close" class="close_off_canvas js-popup-close">
+		</div>
+		<form action="#">
+			<div class="container_product_popup">
+				<div class="container_product_scrollbar">
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Eyas/Brown.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Brown
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Eyas/Green.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Green
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Eyas/Darck-Gray.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Dark gray
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Eyas/Dark-Blue.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Dark blue
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Eyas/Light-Blue.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Light blue
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Eyas/Light-Gray.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Light gray
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+				</div>
+			</div>
+
+			<div class="container_product_bottom">
+				<div class="off_canvas-product-total">
+					Subtotal:
+					<span>$XX.XX</span>
+				</div>
+
+				<button type="submit" class="button primary-button">
+					Add to cart
+				</button>
+			</div>
+		</form>
+	</div>
+	<div class="off_canvas-pubic offcanvas-popup popup--pubic">
+		<div class="account-icon_close">
+			<div class="heading_off_canvas">
+				<svg width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<mask id="path-1-inside-1_121_269" fill="white">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M10.9968 0.00101961C10.9568 0.00034106 10.9166 0 10.8764 0H11.1236C11.0812 0 11.0389 0.000340798 10.9968 0.00101961ZM10.9968 0.00101961C7.59672 0.0557649 4.94382 2.30902 4.94382 5.30115H2.7191C1.23596 5.30115 0 6.56333 0 8.07794V24.9911C0 26.5057 1.23596 27.7679 2.7191 27.7679H19.2809C20.764 27.7679 22 26.5057 22 24.9911V8.07794C22 6.56333 20.764 5.30115 19.2809 5.30115H17.0562C17.0562 2.55663 14.3999 0.0587182 10.9968 0.00101961ZM11.1234 1.26172C13.5953 1.26172 15.82 3.02877 15.82 5.30069H6.42675C6.42675 3.02877 8.40428 1.26172 11.1234 1.26172Z">
+						</path>
+					</mask>
+					<path class="svg-stroke" fill-rule="evenodd" clip-rule="evenodd"
+						d="M10.9968 0.00101961C10.9568 0.00034106 10.9166 0 10.8764 0H11.1236C11.0812 0 11.0389 0.000340798 10.9968 0.00101961ZM10.9968 0.00101961C7.59672 0.0557649 4.94382 2.30902 4.94382 5.30115H2.7191C1.23596 5.30115 0 6.56333 0 8.07794V24.9911C0 26.5057 1.23596 27.7679 2.7191 27.7679H19.2809C20.764 27.7679 22 26.5057 22 24.9911V8.07794C22 6.56333 20.764 5.30115 19.2809 5.30115H17.0562C17.0562 2.55663 14.3999 0.0587182 10.9968 0.00101961ZM11.1234 1.26172C13.5953 1.26172 15.82 3.02877 15.82 5.30069H6.42675C6.42675 3.02877 8.40428 1.26172 11.1234 1.26172Z"
+						fill="#4D4D4D"></path>
+					<path
+						d="M4.94382 5.30115V6.30115H5.94382V5.30115H4.94382ZM17.0562 5.30115H16.0562V6.30115H17.0562V5.30115ZM15.82 5.30069V6.30069H16.82V5.30069H15.82ZM6.42675 5.30069H5.42675V6.30069H6.42675V5.30069ZM10.8764 1C10.911 1 10.9455 1.00029 10.9798 1.00088L11.0137 -0.998837C10.9681 -0.999611 10.9223 -1 10.8764 -1V1ZM11.1236 -1H10.8764V1H11.1236V-1ZM11.0129 1.00089C11.0497 1.0003 11.0866 1 11.1236 1V-1C11.0758 -1 11.0282 -0.999616 10.9807 -0.998851L11.0129 1.00089ZM5.94382 5.30115C5.94382 2.9964 8.0056 1.04931 11.0129 1.00089L10.9807 -0.998851C7.18785 -0.937781 3.94382 1.62164 3.94382 5.30115H5.94382ZM2.7191 6.30115H4.94382V4.30115H2.7191V6.30115ZM1 8.07794C1 7.09571 1.80793 6.30115 2.7191 6.30115V4.30115C0.663982 4.30115 -1 6.03094 -1 8.07794H1ZM1 24.9911V8.07794H-1V24.9911H1ZM2.7191 26.7679C1.80793 26.7679 1 25.9734 1 24.9911H-1C-1 27.0381 0.663982 28.7679 2.7191 28.7679V26.7679ZM19.2809 26.7679H2.7191V28.7679H19.2809V26.7679ZM21 24.9911C21 25.9734 20.1921 26.7679 19.2809 26.7679V28.7679C21.336 28.7679 23 27.0381 23 24.9911H21ZM21 8.07794V24.9911H23V8.07794H21ZM19.2809 6.30115C20.1921 6.30115 21 7.09572 21 8.07794H23C23 6.03094 21.336 4.30115 19.2809 4.30115V6.30115ZM17.0562 6.30115H19.2809V4.30115H17.0562V6.30115ZM10.9798 1.00088C13.9608 1.05142 16.0562 3.21798 16.0562 5.30115H18.0562C18.0562 1.89529 14.839 -0.933981 11.0137 -0.998837L10.9798 1.00088ZM16.82 5.30069C16.82 2.31907 13.9758 0.261719 11.1234 0.261719V2.26172C13.2148 2.26172 14.82 3.73846 14.82 5.30069H16.82ZM6.42675 6.30069H15.82V4.30069H6.42675V6.30069ZM11.1234 0.261719C7.98739 0.261719 5.42675 2.35018 5.42675 5.30069H7.42675C7.42675 3.70736 8.82117 2.26172 11.1234 2.26172V0.261719Z"
+						fill="#4D4D4D" mask="url(#path-1-inside-1_121_269)"></path>
+				</svg>
+				<h2>Pubic Hair</h2>
+			</div>
+			<img src="./wp-content/uploads/2023/01/Frame-1.svg" alt="Close" class="close_off_canvas js-popup-close">
+		</div>
+		<form action="#">
+			<div class="container_product_popup">
+				<div class="container_product_scrollbar">
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Pubic Hair/None-pubic-hair.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									None pubic hair
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Pubic Hair/Pubic-hair.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Pubic hair
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+				</div>
+			</div>
+
+			<div class="container_product_bottom">
+				<div class="off_canvas-product-total">
+					Subtotal:
+					<span>$XX.XX</span>
+				</div>
+
+				<button type="submit" class="button primary-button">
+					Add to cart
+				</button>
+			</div>
+		</form>
+	</div>
+	<div class="off_canvas-vagina offcanvas-popup popup--vagina">
+		<div class="account-icon_close">
+			<div class="heading_off_canvas">
+				<svg width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<mask id="path-1-inside-1_121_269" fill="white">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M10.9968 0.00101961C10.9568 0.00034106 10.9166 0 10.8764 0H11.1236C11.0812 0 11.0389 0.000340798 10.9968 0.00101961ZM10.9968 0.00101961C7.59672 0.0557649 4.94382 2.30902 4.94382 5.30115H2.7191C1.23596 5.30115 0 6.56333 0 8.07794V24.9911C0 26.5057 1.23596 27.7679 2.7191 27.7679H19.2809C20.764 27.7679 22 26.5057 22 24.9911V8.07794C22 6.56333 20.764 5.30115 19.2809 5.30115H17.0562C17.0562 2.55663 14.3999 0.0587182 10.9968 0.00101961ZM11.1234 1.26172C13.5953 1.26172 15.82 3.02877 15.82 5.30069H6.42675C6.42675 3.02877 8.40428 1.26172 11.1234 1.26172Z">
+						</path>
+					</mask>
+					<path class="svg-stroke" fill-rule="evenodd" clip-rule="evenodd"
+						d="M10.9968 0.00101961C10.9568 0.00034106 10.9166 0 10.8764 0H11.1236C11.0812 0 11.0389 0.000340798 10.9968 0.00101961ZM10.9968 0.00101961C7.59672 0.0557649 4.94382 2.30902 4.94382 5.30115H2.7191C1.23596 5.30115 0 6.56333 0 8.07794V24.9911C0 26.5057 1.23596 27.7679 2.7191 27.7679H19.2809C20.764 27.7679 22 26.5057 22 24.9911V8.07794C22 6.56333 20.764 5.30115 19.2809 5.30115H17.0562C17.0562 2.55663 14.3999 0.0587182 10.9968 0.00101961ZM11.1234 1.26172C13.5953 1.26172 15.82 3.02877 15.82 5.30069H6.42675C6.42675 3.02877 8.40428 1.26172 11.1234 1.26172Z"
+						fill="#4D4D4D"></path>
+					<path
+						d="M4.94382 5.30115V6.30115H5.94382V5.30115H4.94382ZM17.0562 5.30115H16.0562V6.30115H17.0562V5.30115ZM15.82 5.30069V6.30069H16.82V5.30069H15.82ZM6.42675 5.30069H5.42675V6.30069H6.42675V5.30069ZM10.8764 1C10.911 1 10.9455 1.00029 10.9798 1.00088L11.0137 -0.998837C10.9681 -0.999611 10.9223 -1 10.8764 -1V1ZM11.1236 -1H10.8764V1H11.1236V-1ZM11.0129 1.00089C11.0497 1.0003 11.0866 1 11.1236 1V-1C11.0758 -1 11.0282 -0.999616 10.9807 -0.998851L11.0129 1.00089ZM5.94382 5.30115C5.94382 2.9964 8.0056 1.04931 11.0129 1.00089L10.9807 -0.998851C7.18785 -0.937781 3.94382 1.62164 3.94382 5.30115H5.94382ZM2.7191 6.30115H4.94382V4.30115H2.7191V6.30115ZM1 8.07794C1 7.09571 1.80793 6.30115 2.7191 6.30115V4.30115C0.663982 4.30115 -1 6.03094 -1 8.07794H1ZM1 24.9911V8.07794H-1V24.9911H1ZM2.7191 26.7679C1.80793 26.7679 1 25.9734 1 24.9911H-1C-1 27.0381 0.663982 28.7679 2.7191 28.7679V26.7679ZM19.2809 26.7679H2.7191V28.7679H19.2809V26.7679ZM21 24.9911C21 25.9734 20.1921 26.7679 19.2809 26.7679V28.7679C21.336 28.7679 23 27.0381 23 24.9911H21ZM21 8.07794V24.9911H23V8.07794H21ZM19.2809 6.30115C20.1921 6.30115 21 7.09572 21 8.07794H23C23 6.03094 21.336 4.30115 19.2809 4.30115V6.30115ZM17.0562 6.30115H19.2809V4.30115H17.0562V6.30115ZM10.9798 1.00088C13.9608 1.05142 16.0562 3.21798 16.0562 5.30115H18.0562C18.0562 1.89529 14.839 -0.933981 11.0137 -0.998837L10.9798 1.00088ZM16.82 5.30069C16.82 2.31907 13.9758 0.261719 11.1234 0.261719V2.26172C13.2148 2.26172 14.82 3.73846 14.82 5.30069H16.82ZM6.42675 6.30069H15.82V4.30069H6.42675V6.30069ZM11.1234 0.261719C7.98739 0.261719 5.42675 2.35018 5.42675 5.30069H7.42675C7.42675 3.70736 8.82117 2.26172 11.1234 2.26172V0.261719Z"
+						fill="#4D4D4D" mask="url(#path-1-inside-1_121_269)"></path>
+				</svg>
+				<h2>Vagina</h2>
+			</div>
+			<img src="./wp-content/uploads/2023/01/Frame-1.svg" alt="Close" class="close_off_canvas js-popup-close">
+		</div>
+		<form action="#">
+			<div class="container_product_popup">
+				<div class="container_product_scrollbar">
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Vagina/Fixed.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Fixed
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Vagina/Replaceable.jpg" alt="Eyas color">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Replaceable
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+				</div>
+			</div>
+
+			<div class="container_product_bottom">
+				<div class="off_canvas-product-total">
+					Subtotal:
+					<span>$XX.XX</span>
+				</div>
+
+				<button type="submit" class="button primary-button">
+					Add to cart
+				</button>
+			</div>
+		</form>
+	</div>
+	<div class="off_canvas-other offcanvas-popup popup--other">
+		<div class="account-icon_close">
+			<div class="heading_off_canvas">
+				<svg width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<mask id="path-1-inside-1_121_269" fill="white">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M10.9968 0.00101961C10.9568 0.00034106 10.9166 0 10.8764 0H11.1236C11.0812 0 11.0389 0.000340798 10.9968 0.00101961ZM10.9968 0.00101961C7.59672 0.0557649 4.94382 2.30902 4.94382 5.30115H2.7191C1.23596 5.30115 0 6.56333 0 8.07794V24.9911C0 26.5057 1.23596 27.7679 2.7191 27.7679H19.2809C20.764 27.7679 22 26.5057 22 24.9911V8.07794C22 6.56333 20.764 5.30115 19.2809 5.30115H17.0562C17.0562 2.55663 14.3999 0.0587182 10.9968 0.00101961ZM11.1234 1.26172C13.5953 1.26172 15.82 3.02877 15.82 5.30069H6.42675C6.42675 3.02877 8.40428 1.26172 11.1234 1.26172Z">
+						</path>
+					</mask>
+					<path class="svg-stroke" fill-rule="evenodd" clip-rule="evenodd"
+						d="M10.9968 0.00101961C10.9568 0.00034106 10.9166 0 10.8764 0H11.1236C11.0812 0 11.0389 0.000340798 10.9968 0.00101961ZM10.9968 0.00101961C7.59672 0.0557649 4.94382 2.30902 4.94382 5.30115H2.7191C1.23596 5.30115 0 6.56333 0 8.07794V24.9911C0 26.5057 1.23596 27.7679 2.7191 27.7679H19.2809C20.764 27.7679 22 26.5057 22 24.9911V8.07794C22 6.56333 20.764 5.30115 19.2809 5.30115H17.0562C17.0562 2.55663 14.3999 0.0587182 10.9968 0.00101961ZM11.1234 1.26172C13.5953 1.26172 15.82 3.02877 15.82 5.30069H6.42675C6.42675 3.02877 8.40428 1.26172 11.1234 1.26172Z"
+						fill="#4D4D4D"></path>
+					<path
+						d="M4.94382 5.30115V6.30115H5.94382V5.30115H4.94382ZM17.0562 5.30115H16.0562V6.30115H17.0562V5.30115ZM15.82 5.30069V6.30069H16.82V5.30069H15.82ZM6.42675 5.30069H5.42675V6.30069H6.42675V5.30069ZM10.8764 1C10.911 1 10.9455 1.00029 10.9798 1.00088L11.0137 -0.998837C10.9681 -0.999611 10.9223 -1 10.8764 -1V1ZM11.1236 -1H10.8764V1H11.1236V-1ZM11.0129 1.00089C11.0497 1.0003 11.0866 1 11.1236 1V-1C11.0758 -1 11.0282 -0.999616 10.9807 -0.998851L11.0129 1.00089ZM5.94382 5.30115C5.94382 2.9964 8.0056 1.04931 11.0129 1.00089L10.9807 -0.998851C7.18785 -0.937781 3.94382 1.62164 3.94382 5.30115H5.94382ZM2.7191 6.30115H4.94382V4.30115H2.7191V6.30115ZM1 8.07794C1 7.09571 1.80793 6.30115 2.7191 6.30115V4.30115C0.663982 4.30115 -1 6.03094 -1 8.07794H1ZM1 24.9911V8.07794H-1V24.9911H1ZM2.7191 26.7679C1.80793 26.7679 1 25.9734 1 24.9911H-1C-1 27.0381 0.663982 28.7679 2.7191 28.7679V26.7679ZM19.2809 26.7679H2.7191V28.7679H19.2809V26.7679ZM21 24.9911C21 25.9734 20.1921 26.7679 19.2809 26.7679V28.7679C21.336 28.7679 23 27.0381 23 24.9911H21ZM21 8.07794V24.9911H23V8.07794H21ZM19.2809 6.30115C20.1921 6.30115 21 7.09572 21 8.07794H23C23 6.03094 21.336 4.30115 19.2809 4.30115V6.30115ZM17.0562 6.30115H19.2809V4.30115H17.0562V6.30115ZM10.9798 1.00088C13.9608 1.05142 16.0562 3.21798 16.0562 5.30115H18.0562C18.0562 1.89529 14.839 -0.933981 11.0137 -0.998837L10.9798 1.00088ZM16.82 5.30069C16.82 2.31907 13.9758 0.261719 11.1234 0.261719V2.26172C13.2148 2.26172 14.82 3.73846 14.82 5.30069H16.82ZM6.42675 6.30069H15.82V4.30069H6.42675V6.30069ZM11.1234 0.261719C7.98739 0.261719 5.42675 2.35018 5.42675 5.30069H7.42675C7.42675 3.70736 8.82117 2.26172 11.1234 2.26172V0.261719Z"
+						fill="#4D4D4D" mask="url(#path-1-inside-1_121_269)"></path>
+				</svg>
+				<h2>Other Options</h2>
+			</div>
+			<img src="./wp-content/uploads/2023/01/Frame-1.svg" alt="Close" class="close_off_canvas js-popup-close">
+		</div>
+		<form action="#">
+			<div class="container_product_popup">
+				<div class="container_product_scrollbar">
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Other Options/Articulated-Fingers.jpg" alt="Other Options">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Articulated fingers
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Other Options/Flight-Case.jpg" alt="Other Options">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Flight case
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Other Options/Heating.jpg" alt="Other Options">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Heating
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Other Options/Moaning.jpg" alt="Other Options">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Moaning
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Other Options/Realistic-Body-Painting.jpg" alt="Other Options">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Realistic body painting
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Other Options/Silicone-Socks.jpg" alt="Other Options">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Silicone socks
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Other Options/Stainless-Stand-Holder.jpg" alt="Other Options">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Stainless stand holder
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+
+					<label class="off_canvas-product-input">
+						<div class="off_canvas-product-details">
+							<div class="off_canvas-product-image">
+								<img src="./images/dist/Dols/Options/Other Options/Stand-Holder.jpg" alt="Other options">
+							</div>
+							<div class="off_canvas-product-info">
+								<h3>
+									Stand holder
+								</h3>
+								<span>
+									$XX.XX
+								</span>
+							</div>
+						</div>
+						<input name="skin" type="radio" class="off_canvas-product-radio">
+					</label>
+				</div>
+			</div>
+
+			<div class="container_product_bottom">
+				<div class="off_canvas-product-total">
+					Subtotal:
+					<span>$XX.XX</span>
+				</div>
+
+				<button type="submit" class="button primary-button">
+					Add to cart
+				</button>
+			</div>
+		</form>
 	</div>
 
 
@@ -897,7 +2003,7 @@ text-decoration: underline;
 							</div>
 						</div>
 
-						
+
 					</div>
 					<div class="product_description">
 						<div class="product_description1">
@@ -1035,37 +2141,37 @@ text-decoration: underline;
 								</h3>
 								<div class="options-wrapper">
 									<div class="options-left">
-										<button class="button primary-button">
+										<button class="button primary-button js-popup" type="button" data-popup="skin">
 											Skin Color
 										</button>
-										<button class="button primary-button">
+										<button class="button primary-button js-popup" type="button" data-popup="breast">
 											Breast Options
 										</button>
-										<button class="button primary-button">
+										<button class="button primary-button js-popup" type="button" data-popup="hair">
 											Hair Style
 										</button>
-										<button class="button primary-button">
+										<button class="button primary-button js-popup" type="button" data-popup="mouth">
 											Mouth Type
 										</button>
-										<button class="button primary-button">
+										<button class="button primary-button js-popup" type="button" data-popup="foot">
 											Foot Type
 										</button>
 									</div>
 
 									<div class="options-right">
-										<button class="button primary-button">
+										<button class="button primary-button js-popup" type="button" data-popup="shoulder">
 											Shoulder Type
 										</button>
-										<button class="button primary-button">
+										<button class="button primary-button js-popup" type="button" data-popup="eye">
 											Eye Color
 										</button>
-										<button class="button primary-button">
+										<button class="button primary-button js-popup" type="button" data-popup="pubic">
 											Pubic Hair
 										</button>
-										<button class="button primary-button">
+										<button class="button primary-button js-popup" type="button" data-popup="vagina">
 											Vagina
 										</button>
-										<button class="button primary-button">
+										<button class="button primary-button js-popup" type="button" data-popup="other">
 											Other Options
 										</button>
 									</div>
@@ -1591,7 +2697,7 @@ text-decoration: underline;
 				<div class="wr-swiper goods df">
 					<div class="my-swiper-best-selling swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
 						<!-- Additional required wrapper -->
-						<div class="swiper-wrapper">
+						<div class="swiper-wrapper" id="swiper-wrapper-342bf44a58e155510">
 							<!-- Slides -->
 
 
@@ -1601,7 +2707,10 @@ text-decoration: underline;
 									<div class="wrapper-fav">
 										<span class="icon icon-fav">
 											<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 9.333 9.333">
-												<path d="M62.504 43.715c0 9.09-7.367 16.46-16.461 16.46-5.934 0-11.117-3.152-14.012-7.863-2.898 4.711-8.082 7.864-14.02 7.864-9.09 0-16.46-7.371-16.46-16.461 0-4.95 2.195-9.375 5.652-12.39l23.324-23.33a2.122 2.122 0 0 1 1.504-.621 2.12 2.12 0 0 1 1.5.621l23.325 23.328c3.456 3.016 5.648 7.442 5.648 12.39" style="fill-opacity:1;fill-rule:evenodd;" transform="matrix(.13333 0 0 -.13333 0 9.333)"></path>
+												<path
+													d="M62.504 43.715c0 9.09-7.367 16.46-16.461 16.46-5.934 0-11.117-3.152-14.012-7.863-2.898 4.711-8.082 7.864-14.02 7.864-9.09 0-16.46-7.371-16.46-16.461 0-4.95 2.195-9.375 5.652-12.39l23.324-23.33a2.122 2.122 0 0 1 1.504-.621 2.12 2.12 0 0 1 1.5.621l23.325 23.328c3.456 3.016 5.648 7.442 5.648 12.39"
+													style="fill-opacity:1;fill-rule:evenodd;"
+													transform="matrix(.13333 0 0 -.13333 0 9.333)"></path>
 											</svg>
 										</span>
 									</div>
@@ -1684,7 +2793,10 @@ text-decoration: underline;
 									<div class="wrapper-fav">
 										<span class="icon icon-fav">
 											<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 9.333 9.333">
-												<path d="M62.504 43.715c0 9.09-7.367 16.46-16.461 16.46-5.934 0-11.117-3.152-14.012-7.863-2.898 4.711-8.082 7.864-14.02 7.864-9.09 0-16.46-7.371-16.46-16.461 0-4.95 2.195-9.375 5.652-12.39l23.324-23.33a2.122 2.122 0 0 1 1.504-.621 2.12 2.12 0 0 1 1.5.621l23.325 23.328c3.456 3.016 5.648 7.442 5.648 12.39" style="fill-opacity:1;fill-rule:evenodd;" transform="matrix(.13333 0 0 -.13333 0 9.333)"></path>
+												<path
+													d="M62.504 43.715c0 9.09-7.367 16.46-16.461 16.46-5.934 0-11.117-3.152-14.012-7.863-2.898 4.711-8.082 7.864-14.02 7.864-9.09 0-16.46-7.371-16.46-16.461 0-4.95 2.195-9.375 5.652-12.39l23.324-23.33a2.122 2.122 0 0 1 1.504-.621 2.12 2.12 0 0 1 1.5.621l23.325 23.328c3.456 3.016 5.648 7.442 5.648 12.39"
+													style="fill-opacity:1;fill-rule:evenodd;"
+													transform="matrix(.13333 0 0 -.13333 0 9.333)"></path>
 											</svg>
 										</span>
 									</div>
@@ -1760,7 +2872,10 @@ text-decoration: underline;
 									<div class="wrapper-fav">
 										<span class="icon icon-fav">
 											<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 9.333 9.333">
-												<path d="M62.504 43.715c0 9.09-7.367 16.46-16.461 16.46-5.934 0-11.117-3.152-14.012-7.863-2.898 4.711-8.082 7.864-14.02 7.864-9.09 0-16.46-7.371-16.46-16.461 0-4.95 2.195-9.375 5.652-12.39l23.324-23.33a2.122 2.122 0 0 1 1.504-.621 2.12 2.12 0 0 1 1.5.621l23.325 23.328c3.456 3.016 5.648 7.442 5.648 12.39" style="fill-opacity:1;fill-rule:evenodd;" transform="matrix(.13333 0 0 -.13333 0 9.333)"></path>
+												<path
+													d="M62.504 43.715c0 9.09-7.367 16.46-16.461 16.46-5.934 0-11.117-3.152-14.012-7.863-2.898 4.711-8.082 7.864-14.02 7.864-9.09 0-16.46-7.371-16.46-16.461 0-4.95 2.195-9.375 5.652-12.39l23.324-23.33a2.122 2.122 0 0 1 1.504-.621 2.12 2.12 0 0 1 1.5.621l23.325 23.328c3.456 3.016 5.648 7.442 5.648 12.39"
+													style="fill-opacity:1;fill-rule:evenodd;"
+													transform="matrix(.13333 0 0 -.13333 0 9.333)"></path>
 											</svg>
 										</span>
 									</div>
@@ -1836,7 +2951,10 @@ text-decoration: underline;
 									<div class="wrapper-fav">
 										<span class="icon icon-fav">
 											<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 9.333 9.333">
-												<path d="M62.504 43.715c0 9.09-7.367 16.46-16.461 16.46-5.934 0-11.117-3.152-14.012-7.863-2.898 4.711-8.082 7.864-14.02 7.864-9.09 0-16.46-7.371-16.46-16.461 0-4.95 2.195-9.375 5.652-12.39l23.324-23.33a2.122 2.122 0 0 1 1.504-.621 2.12 2.12 0 0 1 1.5.621l23.325 23.328c3.456 3.016 5.648 7.442 5.648 12.39" style="fill-opacity:1;fill-rule:evenodd;" transform="matrix(.13333 0 0 -.13333 0 9.333)"></path>
+												<path
+													d="M62.504 43.715c0 9.09-7.367 16.46-16.461 16.46-5.934 0-11.117-3.152-14.012-7.863-2.898 4.711-8.082 7.864-14.02 7.864-9.09 0-16.46-7.371-16.46-16.461 0-4.95 2.195-9.375 5.652-12.39l23.324-23.33a2.122 2.122 0 0 1 1.504-.621 2.12 2.12 0 0 1 1.5.621l23.325 23.328c3.456 3.016 5.648 7.442 5.648 12.39"
+													style="fill-opacity:1;fill-rule:evenodd;"
+													transform="matrix(.13333 0 0 -.13333 0 9.333)"></path>
 											</svg>
 										</span>
 									</div>
