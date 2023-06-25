@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	}
 
-	//Копируем блок с вставляем в другой.
+	//Копируем блок и вставляем в другой.
 	let copyBlocks = document.querySelectorAll('.product-left-copy'),
 		duplicateBlocks = document.querySelectorAll('.product-left-duplicate');
 
@@ -222,6 +222,25 @@ document.addEventListener('DOMContentLoaded', () => {
 			duplicateBlocks[i].innerHTML = copyBlocks[i].innerHTML;
 		}
 	}
+
+	const productInfoCopy = document.querySelector('.product-info-copy');
+	const productTopCopy = document.querySelector('.product-top-copy');
+
+	const productInfoDuplicate = document.querySelector('.product-info-duplicate');
+	const productTopDuplicate = document.querySelector('.product-top-duplicate');
+
+	if (productInfoCopy && productInfoDuplicate) {
+		productInfoDuplicate.innerHTML = productInfoCopy.innerHTML;
+	} else {
+		console.log('Не найдены элементы для копирования и вставки product-info');
+	}
+
+	if (productTopCopy && productTopDuplicate) {
+		productTopDuplicate.innerHTML = productTopCopy.innerHTML;
+	} else {
+		console.log('Не найдены элементы для копирования и вставки product-top');
+	}
+
 
 	//Страница Dolls
 	//Чтобы считывался клик по favorite на карточке good

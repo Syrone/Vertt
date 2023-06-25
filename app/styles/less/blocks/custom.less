@@ -33,6 +33,34 @@
 	}
 }
 
+.applepay-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 40px;
+	font-size: 18px;
+	color: white;
+	background-color: black;
+	border: none;
+	border-radius: 30px;
+	padding: 4px 20px;
+
+	.icon {
+		width: 50px;
+		margin-inline: 7px;
+	}
+
+	&:hover {
+		opacity: .8;
+	}
+
+	&:focus,
+	&:active {
+		opacity: .65;
+	}
+}
+
 .button-link {
 	display: inline-flex;
 	justify-content: center;
@@ -866,12 +894,39 @@
 		}
 	}
 
+	.product-top-duplicate {
+		display: none;
+	}
+
+	.product-info-duplicate {
+		display: none;
+	}
+
 	.meta {
+		display: flex;
+		justify-content: space-between;
 		margin-block: 50px;
+
+		.payments {
+			display: none;
+		}
 	}
 
 	.description {
+		line-height: normal;
 		margin-bottom: 20px;
+
+		p {
+			text-align: justify;
+
+			&+p {
+				margin-top: 15px;
+			}
+		}
+
+		&-mobile {
+			display: none;
+		}
 	}
 
 	.options {
@@ -881,6 +936,12 @@
 			font-size: 22px;
 			font-weight: 500;
 			margin-bottom: 20px;
+
+			span {
+				font-size: var(--fz-tiny);
+				color: var(--dark-light-color);
+				float: right;
+			}
 		}
 
 		&-wrapper {
@@ -933,30 +994,52 @@
 
 		.add_button {
 			width: 45%;
-			flex-direction: column-reverse;
 			margin-block: 0;
+
+			.cart {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				height: 100%;
+			}
 
 			.save {
 				width: 100%;
+
+				.custom-select-number {
+					display: none;
+				}
 			}
 
 			.summary {
 				width: 100%;
-			}
-
-			.cart {
-				display: flex;
+				height: 100%;
 			}
 
 			.button {
-				width: 100%;
+				width: 65%;
+				height: initial;
+				margin-top: auto;
 			}
 		}
 
+		.applepay-button {
+			display: none;
+		}
+
 		.custom-select-number {
-			width: 40%;
+			width: 25%;
 			min-width: 80px;
-			margin-right: 40px;
+			height: initial;
+			margin-top: auto;
+
+			.select-button {
+				background-color: var(--primary-color);
+			}
+
+			.select-content {
+				background-color: var(--primary-color);
+			}
 
 			.select {
 				left: 45%;
@@ -987,6 +1070,57 @@
 			width: auto !important;
 			object-fit: cover;
 			border-radius: 15px;
+		}
+	}
+}
+
+.accordion-product {
+	font-family: var(--Swis);
+
+	&-title {
+		font-size: 44px;
+		margin-bottom: 40px;
+	}
+
+	#accordeon {
+		.acc-head {
+			p {
+				font-size: 22px;
+				font-weight: 400;
+			}
+
+			img {
+				max-width: 16px;
+			}
+		}
+	}
+}
+
+.swiper-slide-best-selling {
+	.wrapper-fav {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		z-index: 10;
+		.icon {
+			width: 30px;
+		}
+	}
+
+	.rating {
+		display: flex;
+		align-items: center;
+		text-align: start;
+
+		&>span {
+			font-size: var(--fz-tiny);
+			color: var(--gray-color);
+			line-height: normal;
+			margin-inline: 16px;
+		}
+
+		.icon-star {
+			--dark-light-color: var(--gray-color);
 		}
 	}
 }
@@ -1154,6 +1288,24 @@
 		.swiper-effect-card2-scrollbar {
 			width: 35% !important;
 			bottom: -64px !important;
+		}
+	}
+}
+
+@media (max-width: 1240px) {
+
+	//Страница товара Dolls.
+	.accordion-product {
+		&-title {
+			font-size: 26px;
+		}
+
+		#accordeon {
+			.acc-head {
+				p {
+					font-size: 16px;
+				}
+			}
 		}
 	}
 }
@@ -1339,6 +1491,113 @@
 	//Страница товара Dolls.
 	.product-block-dolls {
 		margin-top: 155px !important;
+
+		//Инфо карточки
+		.product-top-copy {
+			display: none;
+		}
+
+		.product-top-duplicate {
+			display: block;
+			margin-bottom: 50px;
+
+			.price ins {
+				margin: 0;
+			}
+		}
+
+		.product-top-methods {
+			display: flex;
+			justify-content: space-between;
+
+			.right_align {
+				display: none;
+			}
+
+			.payments p {
+				text-align: right;
+			}
+		}
+
+		.product-info-copy {
+			display: none;
+		}
+
+		.product-info-duplicate {
+			display: block;
+		}
+
+		.product_description1 {
+			width: 100%;
+		}
+
+		.meta {
+			.payments {
+				display: flex;
+				align-self: flex-end;
+
+				&>p {
+					display: none;
+				}
+			}
+		}
+
+		.description {
+			&-desktop {
+				display: none;
+			}
+
+			&-mobile {
+				display: block;
+			}
+		}
+
+		.product-bottom {
+			flex-direction: column;
+
+			.product-total,
+			.add_button {
+				width: 100%;
+			}
+
+			.product-total {
+				margin-bottom: 40px;
+			}
+
+			.add_button {
+				.save {
+					width: 46%;
+					order: 2;
+				}
+
+				.custom-select-number {
+					width: 46%;
+					order: 1;
+
+					.select {
+						left: 50%;
+					}
+				}
+
+				.button {
+					width: 100%;
+					margin-top: 30px;
+					order: 3;
+				}
+			}
+
+			.applepay-button {
+				display: flex;
+				margin-top: 30px;
+				order: 4;
+			}
+		}
+
+		//Переназначение стилей слайдера Woocomerce
+		.product_slider {
+			margin: 0;
+			padding-bottom: 50px;
+		}
 
 		.nslick-slide {
 			height: 125vw !important;
