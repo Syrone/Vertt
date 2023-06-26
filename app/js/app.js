@@ -252,25 +252,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	});
 
-	//offcanvas popup Блок с выбором input radio
-	let radiosPopupProduct = document.querySelectorAll('.off_canvas-product-radio');
-
-	if (radiosPopupProduct) {
-		radiosPopupProduct.forEach(radio => {
-			radio.addEventListener('change', function () {
-				radiosPopupProduct.forEach(innerRadio => {
-					let parent = innerRadio.closest('.off_canvas-product-input');
-	
-					if (innerRadio.checked) {
-						parent.classList.add('checked');
-					} else {
-						parent.classList.remove('checked');
-					}
-				});
-			});
-		});
-	}
-
 
 
 
